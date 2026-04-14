@@ -12,9 +12,49 @@
       --card-back: #0f1f38;
       --text-main: #13233a;
       --text-light: #f2f7ff;
+      --text-muted: #455873;
       --accent: #2f6feb;
       --shadow: 0 14px 35px rgba(16, 32, 56, 0.16);
       --radius: 20px;
+      --btn-bg: #ffffff;
+      --btn-text: #11243f;
+      --btn-border: #d7e1f0;
+      --btn-hover-border: #b9c9e0;
+      --btn-hover-shadow: 0 8px 20px rgba(17, 36, 63, 0.1);
+      --practice-bg: #fff2ec;
+      --practice-text: #7b2f1d;
+      --practice-border: #e5b19a;
+      --practice-hover-border: #d18260;
+      --practice-hover-shadow: 0 8px 20px rgba(170, 80, 48, 0.18);
+      --reset-bg: #f5f7fb;
+      --reset-text: #374a67;
+      --reset-border: #c8d5ea;
+    }
+
+    /* Dark mode uses the same variables with different values. */
+    body.dark-mode {
+      --bg-start: #0d1420;
+      --bg-end: #121c2c;
+      --card-front: #1a263b;
+      --card-back: #0b1322;
+      --text-main: #e6eefc;
+      --text-light: #f4f7ff;
+      --text-muted: #b9c7dd;
+      --accent: #7ea5ff;
+      --shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
+      --btn-bg: #1a263b;
+      --btn-text: #e6eefc;
+      --btn-border: #30415d;
+      --btn-hover-border: #49648f;
+      --btn-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      --practice-bg: #3a1f24;
+      --practice-text: #ffd4c9;
+      --practice-border: #7f4a56;
+      --practice-hover-border: #ad6677;
+      --practice-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      --reset-bg: #152238;
+      --reset-text: #d6e3f8;
+      --reset-border: #2f4668;
     }
 
     * {
@@ -24,7 +64,7 @@
     body {
       margin: 0;
       min-height: 100vh;
-      min-height: 100dvh; /* Better on mobile browsers (including iPhone Safari). */
+      min-height: 100dvh;
       display: grid;
       place-items: center;
       padding: 24px 16px;
@@ -34,7 +74,7 @@
     }
 
     .app {
-      width: min(560px, 100%);
+      width: min(620px, 100%);
       text-align: center;
     }
 
@@ -46,11 +86,10 @@
 
     .hint {
       margin: 0 0 20px;
-      color: #455873;
+      color: var(--text-muted);
       font-size: 0.95rem;
     }
 
-    /* This creates the 3D depth for the flip animation. */
     .card-scene {
       width: 100%;
       max-width: 460px;
@@ -119,11 +158,27 @@
       text-wrap: balance;
     }
 
+    .index,
+    .learning-meta,
+    .action-hint {
+      color: var(--text-muted);
+    }
+
     .index {
-      margin: 16px 0 20px;
+      margin: 16px 0 6px;
       font-size: 0.98rem;
-      color: #3f526e;
       font-weight: 600;
+    }
+
+    .learning-meta {
+      margin: 0 0 8px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .action-hint {
+      margin: 0 0 16px;
+      font-size: 0.86rem;
     }
 
     .controls {
@@ -133,14 +188,18 @@
       flex-wrap: wrap;
     }
 
+    .secondary-controls {
+      margin-top: 10px;
+    }
+
     button {
       min-width: 118px;
-      min-height: 44px; /* Comfortable tap target for mobile. */
+      min-height: 44px;
       padding: 10px 18px;
-      border: 1px solid #d7e1f0;
+      border: 1px solid var(--btn-border);
       border-radius: 12px;
-      background: #ffffff;
-      color: #11243f;
+      background: var(--btn-bg);
+      color: var(--btn-text);
       font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
@@ -149,14 +208,33 @@
     }
 
     button:hover {
-      border-color: #b9c9e0;
-      box-shadow: 0 8px 20px rgba(17, 36, 63, 0.1);
+      border-color: var(--btn-hover-border);
+      box-shadow: var(--btn-hover-shadow);
       transform: translateY(-1px);
     }
 
     button:active {
       transform: translateY(0);
       box-shadow: none;
+    }
+
+    .practice-btn {
+      background: var(--practice-bg);
+      color: var(--practice-text);
+      border-color: var(--practice-border);
+    }
+
+    .practice-btn:hover {
+      border-color: var(--practice-hover-border);
+      box-shadow: var(--practice-hover-shadow);
+    }
+
+    .reset-btn {
+      min-width: 160px;
+      background: var(--reset-bg);
+      color: var(--reset-text);
+      border-color: var(--reset-border);
+      font-size: 0.92rem;
     }
 
     .card:focus-visible,
@@ -178,7 +256,6 @@
     <p class="hint">Tap or click the card to flip it.</p>
 
     <div class="card-scene">
-      <!-- The card has two sides: front (Dutch) and back (English). -->
       <button id="flashcard" class="card" type="button" aria-label="Flashcard. Tap to flip.">
         <div class="card-face card-front">
           <p class="label">Dutch</p>
@@ -192,49 +269,238 @@
     </div>
 
     <p id="cardIndex" class="index">Card 1 of 5</p>
+    <p id="learningMeta" class="learning-meta">Count: 0 • Bucket: 1</p>
+    <p class="action-hint">Next = I knew it • Next time! = I need more practice</p>
 
     <div class="controls">
+      <button id="themeToggleBtn" type="button">Dark mode</button>
       <button id="prevBtn" type="button">Previous</button>
       <button id="shuffleBtn" type="button">Shuffle</button>
+      <button id="nextTimeBtn" class="practice-btn" type="button">Next time!</button>
       <button id="nextBtn" type="button">Next</button>
+    </div>
+
+    <div class="controls secondary-controls">
+      <button id="resetProgressBtn" class="reset-btn" type="button">Reset Progress</button>
     </div>
   </main>
 
   <script>
-    // Fallback list (used if data/words.json cannot be loaded).
+    // ---------------------------------------------
+    // Config values you can tweak later
+    // ---------------------------------------------
+    const THEME_STORAGE_KEY = "dutchFlashcardsTheme";
+    const PROGRESS_STORAGE_KEY = "dutchFlashcardsProgressV1";
+
+    // Bucket selection probabilities (must sum to 100).
+    const BUCKET_WEIGHTS = {
+      1: 60,
+      2: 25,
+      3: 15
+    };
+
+    // Cooldown length: avoid reusing the last N shown words when possible.
+    const COOLDOWN_LENGTH = 2;
+
+    // ---------------------------------------------
+    // Fallback data (used if data/words.json fails)
+    // ---------------------------------------------
     const fallbackWords = [
-      { dutch: "huis", english: "house" },
-      { dutch: "boek", english: "book" },
-      { dutch: "water", english: "water" },
-      { dutch: "fiets", english: "bicycle" },
-      { dutch: "appel", english: "apple" }
+      { id: 1, dutch: "huis", english: "house", count: 0 },
+      { id: 2, dutch: "boek", english: "book", count: 0 },
+      { id: 3, dutch: "water", english: "water", count: 0 },
+      { id: 4, dutch: "fiets", english: "bicycle", count: 0 },
+      { id: 5, dutch: "appel", english: "apple", count: 0 }
     ];
 
-    // ADDED (Shuffle mode):
-    // Keep a source list in original order.
-    // We will never shuffle this list directly.
-    let sourceWords = [...fallbackWords];
+    // ---------------------------------------------
+    // State
+    // ---------------------------------------------
+    let baseWords = [];
+    let words = [];
+    let currentWordIndex = 0;
+    let shownHistoryIds = [];
+    let recentWordIds = [];
 
-    // This is the active order currently shown in the app.
-    let words = [...sourceWords];
-
-    // Keep track of which card we are on.
-    let currentIndex = 0;
-
-    // 3) Get the elements we need to update.
+    // ---------------------------------------------
+    // DOM references
+    // ---------------------------------------------
     const flashcard = document.getElementById("flashcard");
     const dutchWord = document.getElementById("dutchWord");
     const englishWord = document.getElementById("englishWord");
     const cardIndex = document.getElementById("cardIndex");
+    const learningMeta = document.getElementById("learningMeta");
+
+    const themeToggleBtn = document.getElementById("themeToggleBtn");
     const prevBtn = document.getElementById("prevBtn");
     const shuffleBtn = document.getElementById("shuffleBtn");
+    const nextTimeBtn = document.getElementById("nextTimeBtn");
     const nextBtn = document.getElementById("nextBtn");
+    const resetProgressBtn = document.getElementById("resetProgressBtn");
 
-    // Keep only valid rows from JSON files.
-    function sanitizeWords(rawWords) {
-      if (!Array.isArray(rawWords)) {
-        return [];
+    // ---------------------------------------------
+    // Utility helpers
+    // ---------------------------------------------
+    function cloneWords(wordList) {
+      return wordList.map(function (word) {
+        return {
+          id: word.id,
+          dutch: word.dutch,
+          english: word.english,
+          count: word.count
+        };
+      });
+    }
+
+    function randomFromArray(list) {
+      return list[Math.floor(Math.random() * list.length)];
+    }
+
+    // ---------------------------------------------
+    // Theme (dark mode)
+    // ---------------------------------------------
+    function applyTheme(theme) {
+      const useDarkMode = theme === "dark";
+      document.body.classList.toggle("dark-mode", useDarkMode);
+      themeToggleBtn.textContent = useDarkMode ? "Light mode" : "Dark mode";
+    }
+
+    function loadSavedTheme() {
+      const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+      if (savedTheme === "dark" || savedTheme === "light") {
+        applyTheme(savedTheme);
+      } else {
+        applyTheme("light");
       }
+    }
+
+    function toggleTheme() {
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      const nextTheme = isDarkMode ? "light" : "dark";
+      applyTheme(nextTheme);
+      localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    }
+
+    // ---------------------------------------------
+    // Progress persistence (localStorage)
+    // ---------------------------------------------
+    function readSavedProgressById() {
+      try {
+        const raw = localStorage.getItem(PROGRESS_STORAGE_KEY);
+        if (!raw) return new Map();
+
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) return new Map();
+
+        const countById = new Map();
+
+        parsed.forEach(function (item) {
+          const id = Number(item.id);
+          const count = Number(item.count);
+
+          if (Number.isInteger(id) && id > 0 && Number.isFinite(count)) {
+            countById.set(id, Math.max(0, Math.floor(count)));
+          }
+        });
+
+        return countById;
+      } catch (error) {
+        console.warn("Could not parse saved progress:", error);
+        return new Map();
+      }
+    }
+
+    function applySavedCounts(baseList) {
+      const savedCounts = readSavedProgressById();
+
+      return baseList.map(function (word) {
+        return {
+          id: word.id,
+          dutch: word.dutch,
+          english: word.english,
+          count: savedCounts.has(word.id) ? savedCounts.get(word.id) : 0
+        };
+      });
+    }
+
+    function saveProgress() {
+      // Save the full word list (including counts) so learning progress persists.
+      localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(words));
+    }
+
+    // ---------------------------------------------
+    // Bucket helpers
+    // ---------------------------------------------
+    // Bucket rules:
+    // Count 0-1 => bucket 1
+    // Count 2-3 => bucket 2
+    // Count 4+  => bucket 3
+    function getBucketFromCount(count) {
+      if (count <= 1) return 1;
+      if (count <= 3) return 2;
+      return 3;
+    }
+
+    function buildBucketsByWordIndex(wordList) {
+      const buckets = { 1: [], 2: [], 3: [] };
+
+      wordList.forEach(function (word, index) {
+        const bucket = getBucketFromCount(word.count);
+        buckets[bucket].push(index);
+      });
+
+      return buckets;
+    }
+
+    function pickWeightedBucketId(bucketMap) {
+      const availableBucketIds = [1, 2, 3].filter(function (bucketId) {
+        return bucketMap[bucketId].length > 0;
+      });
+
+      if (availableBucketIds.length === 0) return null;
+
+      let totalWeight = 0;
+      availableBucketIds.forEach(function (bucketId) {
+        totalWeight += BUCKET_WEIGHTS[bucketId];
+      });
+
+      let point = Math.random() * totalWeight;
+
+      for (const bucketId of availableBucketIds) {
+        point -= BUCKET_WEIGHTS[bucketId];
+        if (point <= 0) return bucketId;
+      }
+
+      return availableBucketIds[availableBucketIds.length - 1];
+    }
+
+    // ---------------------------------------------
+    // Cooldown + history helpers
+    // ---------------------------------------------
+    function resetSessionTracking() {
+      shownHistoryIds = [];
+      recentWordIds = [];
+    }
+
+    function pushShownHistory(wordId) {
+      const lastId = shownHistoryIds[shownHistoryIds.length - 1];
+      if (lastId !== wordId) {
+        shownHistoryIds.push(wordId);
+      }
+    }
+
+    function pushRecentWord(wordId) {
+      recentWordIds.push(wordId);
+      if (recentWordIds.length > COOLDOWN_LENGTH) {
+        recentWordIds.shift();
+      }
+    }
+
+    // ---------------------------------------------
+    // Data loading
+    // ---------------------------------------------
+    function sanitizeWords(rawWords) {
+      if (!Array.isArray(rawWords)) return [];
 
       return rawWords
         .filter(function (item) {
@@ -255,46 +521,191 @@
         });
     }
 
-    // Show the current card and always reset to the Dutch side.
-    function renderCard() {
+    function createWordObjectsFromPairs(wordPairs) {
+      return wordPairs.map(function (pair, index) {
+        return {
+          id: index + 1,
+          dutch: pair.dutch,
+          english: pair.english,
+          count: 0
+        };
+      });
+    }
+
+    function initializeDeck(baseDeck) {
+      baseWords = cloneWords(baseDeck).map(function (word) {
+        return {
+          id: word.id,
+          dutch: word.dutch,
+          english: word.english,
+          count: 0
+        };
+      });
+
+      words = applySavedCounts(baseWords);
+      resetSessionTracking();
+
       if (words.length === 0) {
+        renderCard();
+        return;
+      }
+
+      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
+    }
+
+    async function loadWordsFromDataFile() {
+      try {
+        const response = await fetch("./data/words.json", { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error("Could not load data/words.json");
+        }
+
+        const jsonWords = await response.json();
+        const cleanPairs = sanitizeWords(jsonWords);
+        if (cleanPairs.length === 0) return;
+
+        const loadedDeck = createWordObjectsFromPairs(cleanPairs);
+        initializeDeck(loadedDeck);
+      } catch (error) {
+        console.warn("Using fallback words:", error);
+      }
+    }
+
+    // ---------------------------------------------
+    // Card rendering + navigation
+    // ---------------------------------------------
+    function getCurrentWord() {
+      if (currentWordIndex < 0 || currentWordIndex >= words.length) return null;
+      return words[currentWordIndex];
+    }
+
+    function renderCard() {
+      const currentWord = getCurrentWord();
+
+      if (!currentWord) {
         dutchWord.textContent = "No words found";
         englishWord.textContent = "Check data/words.json";
         cardIndex.textContent = "Card 0 of 0";
+        learningMeta.textContent = "Count: - • Bucket: -";
         flashcard.classList.remove("is-flipped");
         return;
       }
 
-      const currentWord = words[currentIndex];
       dutchWord.textContent = currentWord.dutch;
       englishWord.textContent = currentWord.english;
-      cardIndex.textContent = `Card ${currentIndex + 1} of ${words.length}`;
+      cardIndex.textContent = `Card ${currentWordIndex + 1} of ${words.length}`;
+      learningMeta.textContent = `Count: ${currentWord.count} • Bucket: ${getBucketFromCount(currentWord.count)}`;
 
-      // Remove flipped state so each new card starts on Dutch.
+      // Always reset to front side when card changes.
       flashcard.classList.remove("is-flipped");
     }
 
-    // Flip between Dutch and English.
+    function showWordAtIndex(index, options) {
+      if (words.length === 0) {
+        renderCard();
+        return;
+      }
+
+      const config = options || {};
+      const trackHistory = config.trackHistory !== false;
+      const trackRecent = config.trackRecent !== false;
+
+      let safeIndex = index;
+      if (safeIndex < 0 || safeIndex >= words.length) safeIndex = 0;
+
+      currentWordIndex = safeIndex;
+
+      const currentWord = getCurrentWord();
+      if (!currentWord) {
+        renderCard();
+        return;
+      }
+
+      if (trackHistory) pushShownHistory(currentWord.id);
+      if (trackRecent) pushRecentWord(currentWord.id);
+
+      renderCard();
+    }
+
+    function pickNextWordIndexWeighted() {
+      if (words.length === 0) return -1;
+
+      // Build buckets from current counts each time (derived, not stored permanently).
+      const allBuckets = buildBucketsByWordIndex(words);
+
+      // Cooldown rule:
+      // Prefer words not in recentWordIds when alternatives exist.
+      const nonRecentBuckets = { 1: [], 2: [], 3: [] };
+
+      [1, 2, 3].forEach(function (bucketId) {
+        nonRecentBuckets[bucketId] = allBuckets[bucketId].filter(function (index) {
+          return !recentWordIds.includes(words[index].id);
+        });
+      });
+
+      const hasNonRecentOptions = [1, 2, 3].some(function (bucketId) {
+        return nonRecentBuckets[bucketId].length > 0;
+      });
+
+      const bucketSource = hasNonRecentOptions ? nonRecentBuckets : allBuckets;
+      const bucketId = pickWeightedBucketId(bucketSource);
+      if (bucketId === null) return 0;
+
+      return randomFromArray(bucketSource[bucketId]);
+    }
+
+    function goToWeightedNextWord() {
+      const nextIndex = pickNextWordIndexWeighted();
+      if (nextIndex < 0) return;
+      showWordAtIndex(nextIndex, { trackHistory: true, trackRecent: true });
+    }
+
     function flipCard() {
       flashcard.classList.toggle("is-flipped");
     }
 
-    // Move to the next card (wraps from last back to first).
-    function showNextCard() {
-      if (words.length === 0) return;
-      currentIndex = (currentIndex + 1) % words.length;
-      renderCard();
-    }
-
-    // Move to the previous card (wraps from first to last).
     function showPreviousCard() {
-      if (words.length === 0) return;
-      currentIndex = (currentIndex - 1 + words.length) % words.length;
-      renderCard();
+      if (shownHistoryIds.length <= 1 || words.length === 0) return;
+
+      // Remove current item and go back to previous shown word.
+      shownHistoryIds.pop();
+      const previousWordId = shownHistoryIds[shownHistoryIds.length - 1];
+      const previousIndex = words.findIndex(function (word) {
+        return word.id === previousWordId;
+      });
+
+      if (previousIndex === -1) return;
+
+      // Do not push into history again while going backward.
+      showWordAtIndex(previousIndex, { trackHistory: false, trackRecent: false });
     }
 
-    // ADDED (Shuffle mode):
-    // Fisher-Yates shuffle on a COPY, so original list order stays unchanged.
+    // ---------------------------------------------
+    // Learning actions
+    // ---------------------------------------------
+    // "Next" means success: increment count.
+    function handleKnownWord() {
+      const currentWord = getCurrentWord();
+      if (!currentWord) return;
+
+      currentWord.count += 1;
+      saveProgress();
+      goToWeightedNextWord();
+    }
+
+    // "Next time!" means failure: reset count to 0.
+    function handleNeedsPractice() {
+      const currentWord = getCurrentWord();
+      if (!currentWord) return;
+
+      currentWord.count = 0;
+      saveProgress();
+      goToWeightedNextWord();
+    }
+
+    // ---------------------------------------------
+    // Existing extra features
+    // ---------------------------------------------
     function fisherYatesShuffle(list) {
       const shuffled = [...list];
 
@@ -308,49 +719,41 @@
       return shuffled;
     }
 
-    // ADDED (Shuffle mode):
-    // Randomize card order, reset index, and show front side via renderCard().
     function shuffleCards() {
-      if (sourceWords.length === 0) return;
-      words = fisherYatesShuffle(sourceWords);
-      currentIndex = 0;
-      renderCard();
+      if (words.length === 0) return;
+      words = fisherYatesShuffle(words);
+      resetSessionTracking();
+      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
     }
 
-    // Try to load words from data/words.json.
-    async function loadWordsFromDataFile() {
-      try {
-        const response = await fetch("./data/words.json", { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error("Could not load data/words.json");
-        }
+    function resetProgress() {
+      const shouldReset = confirm("Reset all word counts back to 0?");
+      if (!shouldReset) return;
 
-        const jsonWords = await response.json();
-        const cleanWords = sanitizeWords(jsonWords);
+      localStorage.removeItem(PROGRESS_STORAGE_KEY);
+      words = cloneWords(baseWords);
+      resetSessionTracking();
 
-        if (cleanWords.length > 0) {
-          sourceWords = cleanWords;
-          words = [...sourceWords];
-        }
-      } catch (error) {
-        // Keep fallbackWords if loading fails.
-        console.warn("Using fallback words:", error);
+      if (words.length === 0) {
+        renderCard();
+        return;
       }
 
-      currentIndex = 0;
-      renderCard();
+      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
     }
 
-    // Click/tap to flip.
+    // ---------------------------------------------
+    // Event listeners
+    // ---------------------------------------------
     flashcard.addEventListener("click", flipCard);
-
-    // Buttons for navigation.
-    nextBtn.addEventListener("click", showNextCard);
     prevBtn.addEventListener("click", showPreviousCard);
     shuffleBtn.addEventListener("click", shuffleCards);
+    nextBtn.addEventListener("click", handleKnownWord);
+    nextTimeBtn.addEventListener("click", handleNeedsPractice);
+    resetProgressBtn.addEventListener("click", resetProgress);
+    themeToggleBtn.addEventListener("click", toggleTheme);
 
-    // Optional keyboard support for the card:
-    // Enter or Space flips the card when focused.
+    // Optional keyboard support for flip.
     flashcard.addEventListener("keydown", function (event) {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
@@ -358,8 +761,11 @@
       }
     });
 
-    // Initial draw and then load external word list if available.
-    renderCard();
+    // ---------------------------------------------
+    // Startup
+    // ---------------------------------------------
+    loadSavedTheme();
+    initializeDeck(fallbackWords);
     loadWordsFromDataFile();
   </script>
 </body>
