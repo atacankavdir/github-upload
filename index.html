@@ -321,6 +321,11 @@
       font-weight: 700;
     }
 
+    .quiz-complete-stats {
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+
     button {
       min-width: 118px;
       min-height: 44px;
@@ -449,6 +454,7 @@
 
       <div id="quizCompleteBox" class="quiz-complete" hidden>
         <p>Quiz complete!</p>
+        <p id="quizCompleteStats" class="quiz-complete-stats"></p>
         <button id="restartQuizBtn" type="button">Start New 10-Question Quiz</button>
       </div>
     </div>
@@ -525,6 +531,8 @@
     let isQuizChecked = false;
     let wasQuizAnswerCorrect = false;
     let quizCompletedCount = 0;
+    let quizCorrectCount = 0;
+    let quizWrongCount = 0;
     let isQuizComplete = false;
 
     // ---------------------------------------------
@@ -544,6 +552,7 @@
     const checkAnswerBtn = document.getElementById("checkAnswerBtn");
     const quizFeedback = document.getElementById("quizFeedback");
     const quizCompleteBox = document.getElementById("quizCompleteBox");
+    const quizCompleteStats = document.getElementById("quizCompleteStats");
     const restartQuizBtn = document.getElementById("restartQuizBtn");
     const exampleBtn = document.getElementById("exampleBtn");
     const exampleBox = document.getElementById("exampleBox");
@@ -781,8 +790,7 @@
 
       words = applySavedCounts(baseWords);
       resetSessionTracking();
-      quizCompletedCount = 0;
-      isQuizComplete = false;
+      resetQuizSessionStats();
       resetQuizQuestionState();
 
       if (words.length === 0) {
@@ -837,6 +845,13 @@
       quizFeedback.textContent = "";
     }
 
+    function resetQuizSessionStats() {
+      quizCompletedCount = 0;
+      quizCorrectCount = 0;
+      quizWrongCount = 0;
+      isQuizComplete = false;
+    }
+
     function renderCard() {
       const currentWord = getCurrentWord();
 
@@ -868,6 +883,7 @@
         quizAnswerInput.readOnly = true;
         checkAnswerBtn.disabled = true;
         quizCompleteBox.hidden = true;
+        quizCompleteStats.textContent = "";
         return;
       }
 
@@ -889,6 +905,13 @@
       quizAnswerInput.readOnly = isQuizChecked || isQuizComplete;
       checkAnswerBtn.disabled = isQuizChecked || isQuizComplete;
       quizCompleteBox.hidden = !isQuizComplete;
+
+      if (isQuizComplete) {
+        // Show final score for the 10-question session.
+        quizCompleteStats.textContent = `Correct: ${quizCorrectCount} • Wrong: ${quizWrongCount}`;
+      } else {
+        quizCompleteStats.textContent = "";
+      }
     }
 
     function updateModeUi() {
@@ -1038,6 +1061,13 @@
     // Learning actions
     // ---------------------------------------------
     function completeQuizStepAndMoveForward() {
+      // Track quiz score based on the checked answer.
+      if (wasQuizAnswerCorrect) {
+        quizCorrectCount += 1;
+      } else {
+        quizWrongCount += 1;
+      }
+
       quizCompletedCount += 1;
 
       // ADDED (Quiz mode):
@@ -1128,8 +1158,7 @@
     function restartQuizSession() {
       // ADDED (Quiz mode):
       // Start a fresh 10-question session from the current deck state.
-      quizCompletedCount = 0;
-      isQuizComplete = false;
+      resetQuizSessionStats();
       resetQuizQuestionState();
 
       if (words.length === 0) {
@@ -1170,8 +1199,7 @@
       localStorage.removeItem(PROGRESS_STORAGE_KEY);
       words = cloneWords(baseWords);
       resetSessionTracking();
-      quizCompletedCount = 0;
-      isQuizComplete = false;
+      resetQuizSessionStats();
       resetQuizQuestionState();
 
       if (words.length === 0) {
