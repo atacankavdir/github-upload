@@ -1,0 +1,1566 @@
+[
+  {
+    "dutch": "leeftijd",
+    "english": "age"
+  },
+  {
+    "dutch": "laatste",
+    "english": "last"
+  },
+  {
+    "dutch": "verkopers",
+    "english": "salesperson"
+  },
+  {
+    "dutch": "stoppen",
+    "english": "stop"
+  },
+  {
+    "dutch": "bijzonder",
+    "english": "special"
+  },
+  {
+    "dutch": "feest",
+    "english": "party"
+  },
+  {
+    "dutch": "kantine",
+    "english": "cantin"
+  },
+  {
+    "dutch": "cadeau",
+    "english": "gift"
+  },
+  {
+    "dutch": "afscheid nemen",
+    "english": "say goodby"
+  },
+  {
+    "dutch": "gezellig",
+    "english": "cozy"
+  },
+  {
+    "dutch": "wanneer",
+    "english": "when"
+  },
+  {
+    "dutch": "straks",
+    "english": "later"
+  },
+  {
+    "dutch": "gratis",
+    "english": "free"
+  },
+  {
+    "dutch": "druk",
+    "english": "busy"
+  },
+  {
+    "dutch": "genoeg",
+    "english": "enough"
+  },
+  {
+    "dutch": "plek/plaats",
+    "english": "place"
+  },
+  {
+    "dutch": "blijven",
+    "english": "stay"
+  },
+  {
+    "dutch": "schoon",
+    "english": "clean"
+  },
+  {
+    "dutch": "waarom",
+    "english": "why"
+  },
+  {
+    "dutch": "minder",
+    "english": "less"
+  },
+  {
+    "dutch": "vaker",
+    "english": "more often"
+  },
+  {
+    "dutch": "hoe vaak",
+    "english": "how often"
+  },
+  {
+    "dutch": "werkdagen",
+    "english": "workingdays"
+  },
+  {
+    "dutch": "vertrekken",
+    "english": "leave"
+  },
+  {
+    "dutch": "overdag",
+    "english": "during the day"
+  },
+  {
+    "dutch": "s avonds",
+    "english": "in the evening"
+  },
+  {
+    "dutch": "vergadering",
+    "english": "meeting"
+  },
+  {
+    "dutch": "buurt",
+    "english": "neighberhod"
+  },
+  {
+    "dutch": "afspreken",
+    "english": "make appointment"
+  },
+  {
+    "dutch": "activiteit",
+    "english": "activity"
+  },
+  {
+    "dutch": "buurbewoners",
+    "english": "residents"
+  },
+  {
+    "dutch": "kosten",
+    "english": "charges"
+  },
+  {
+    "dutch": "uitrekenen",
+    "english": "calculate"
+  },
+  {
+    "dutch": "duurder",
+    "english": "more expensive"
+  },
+  {
+    "dutch": "sturen",
+    "english": "send"
+  },
+  {
+    "dutch": "belangrijk",
+    "english": "important"
+  },
+  {
+    "dutch": "moeten",
+    "english": "must"
+  },
+  {
+    "dutch": "iedereen",
+    "english": "everybody"
+  },
+  {
+    "dutch": "vinden",
+    "english": "opinion"
+  },
+  {
+    "dutch": "opsturen",
+    "english": "send"
+  },
+  {
+    "dutch": "toen",
+    "english": "then"
+  },
+  {
+    "dutch": "spelletjes",
+    "english": "games"
+  },
+  {
+    "dutch": "pannekoeken",
+    "english": "pancakes"
+  },
+  {
+    "dutch": "hoe duur",
+    "english": "how expensive"
+  },
+  {
+    "dutch": "vorig jaar",
+    "english": "last year"
+  },
+  {
+    "dutch": "bespreken",
+    "english": "discuss"
+  },
+  {
+    "dutch": "groeien",
+    "english": "grow/expand"
+  },
+  {
+    "dutch": "bekend",
+    "english": "famous"
+  },
+  {
+    "dutch": "verkopers",
+    "english": "salespeople"
+  },
+  {
+    "dutch": "vriendelijk",
+    "english": "friendly/kind"
+  },
+  {
+    "dutch": "tevreden",
+    "english": "satisfied"
+  },
+  {
+    "dutch": "doordeweeks",
+    "english": "throughout the week"
+  },
+  {
+    "dutch": "ervaring",
+    "english": "experience"
+  },
+  {
+    "dutch": "voordeel",
+    "english": "advantage"
+  },
+  {
+    "dutch": "nadeel",
+    "english": "disadvantage"
+  },
+  {
+    "dutch": "omgaan met",
+    "english": "to handle"
+  },
+  {
+    "dutch": "beschikbaar",
+    "english": "available"
+  },
+  {
+    "dutch": "eerder",
+    "english": "earlier"
+  },
+  {
+    "dutch": "kiezen",
+    "english": "choose"
+  },
+  {
+    "dutch": "plekken",
+    "english": "places"
+  },
+  {
+    "dutch": "geschiedenis",
+    "english": "history"
+  },
+  {
+    "dutch": "vertellen",
+    "english": "tell"
+  },
+  {
+    "dutch": "oefenen",
+    "english": "practice"
+  },
+  {
+    "dutch": "bezoek",
+    "english": "visitors"
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday"
+  },
+  {
+    "dutch": "samen",
+    "english": "together"
+  },
+  {
+    "dutch": "zoeken",
+    "english": "looking for/search"
+  },
+  {
+    "dutch": "winkels",
+    "english": "shops"
+  },
+  {
+    "dutch": "daarover",
+    "english": "about that"
+  },
+  {
+    "dutch": "informatie",
+    "english": "information"
+  },
+  {
+    "dutch": "afspreken",
+    "english": "meet/make appointment"
+  },
+  {
+    "dutch": "werkrooster",
+    "english": "workingschedule"
+  },
+  {
+    "dutch": "probleem",
+    "english": "problem"
+  },
+  {
+    "dutch": "gebroken",
+    "english": "broken"
+  },
+  {
+    "dutch": "extra/meer",
+    "english": "more"
+  },
+  {
+    "dutch": "daarom",
+    "english": "thats why"
+  },
+  {
+    "dutch": "laten weten",
+    "english": "let know"
+  },
+  {
+    "dutch": "gereedschap",
+    "english": "tools"
+  },
+  {
+    "dutch": "meenemen",
+    "english": "take along"
+  },
+  {
+    "dutch": "Theoriebook",
+    "english": "theorybook"
+  },
+  {
+    "dutch": "bestellen",
+    "english": "order"
+  },
+  {
+    "dutch": "soorten",
+    "english": "variaties"
+  },
+  {
+    "dutch": "meubel",
+    "english": "furniture"
+  },
+  {
+    "dutch": "ontwerpen",
+    "english": "design"
+  },
+  {
+    "dutch": "inschrijven",
+    "english": "register"
+  },
+  {
+    "dutch": "het enige",
+    "english": "the only thing"
+  },
+  {
+    "dutch": "hout",
+    "english": "wood"
+  },
+  {
+    "dutch": "daarmee",
+    "english": "with that"
+  },
+  {
+    "dutch": "op tijd",
+    "english": "on time"
+  },
+  {
+    "dutch": "afmelden",
+    "english": "log out"
+  },
+  {
+    "dutch": "verhuizen",
+    "english": "move"
+  },
+  {
+    "dutch": "tandarts",
+    "english": "dentist"
+  },
+  {
+    "dutch": "afspraak",
+    "english": "appointment"
+  },
+  {
+    "dutch": "helaas",
+    "english": "unfortunately"
+  },
+  {
+    "dutch": "verplaatst",
+    "english": "rescheduled"
+  },
+  {
+    "dutch": "hetzelfde",
+    "english": "same"
+  },
+  {
+    "dutch": "voldoende",
+    "english": "enough"
+  },
+  {
+    "dutch": "namelijk",
+    "english": "namely"
+  },
+  {
+    "dutch": "uitleggen",
+    "english": "explain"
+  },
+  {
+    "dutch": "vakantierooster",
+    "english": "holidays schedule"
+  },
+  {
+    "dutch": "aanvragen",
+    "english": "apply"
+  },
+  {
+    "dutch": "aan het werk",
+    "english": "at work"
+  },
+  {
+    "dutch": "balie",
+    "english": "desk/counter"
+  },
+  {
+    "dutch": "vergeten",
+    "english": "forget"
+  },
+  {
+    "dutch": "nodig",
+    "english": "needed"
+  },
+  {
+    "dutch": "telefoon opnemen",
+    "english": "answer telephone"
+  },
+  {
+    "dutch": "achter elkaar",
+    "english": "in one row"
+  },
+  {
+    "dutch": "weten",
+    "english": "to know"
+  },
+  {
+    "dutch": "kennis",
+    "english": "knowledge"
+  },
+  {
+    "dutch": "reden",
+    "english": "reason"
+  },
+  {
+    "dutch": "praten",
+    "english": "talk"
+  },
+  {
+    "dutch": "studeren",
+    "english": "study"
+  },
+  {
+    "dutch": "zoeken",
+    "english": "looking for"
+  },
+  {
+    "dutch": "werken",
+    "english": "work"
+  },
+  {
+    "dutch": "dicht",
+    "english": "closed"
+  },
+  {
+    "dutch": "taken",
+    "english": "tasks"
+  },
+  {
+    "dutch": "veranderen",
+    "english": "change"
+  },
+  {
+    "dutch": "winkel",
+    "english": "shop"
+  },
+  {
+    "dutch": "volgende week",
+    "english": "next week"
+  },
+  {
+    "dutch": "vragen",
+    "english": "questions"
+  },
+  {
+    "dutch": "horen",
+    "english": "hear"
+  },
+  {
+    "dutch": "maand",
+    "english": "month"
+  },
+  {
+    "dutch": "tot",
+    "english": "untill"
+  },
+  {
+    "dutch": "mensen",
+    "english": "people"
+  },
+  {
+    "dutch": "rooster",
+    "english": "schedule"
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "off course"
+  },
+  {
+    "dutch": "allemaal",
+    "english": "all"
+  },
+  {
+    "dutch": "misschien",
+    "english": "maybe"
+  },
+  {
+    "dutch": "volgende maand",
+    "english": "next month"
+  },
+  {
+    "dutch": "iedere",
+    "english": "every"
+  },
+  {
+    "dutch": "langer",
+    "english": "longer"
+  },
+  {
+    "dutch": "willen",
+    "english": "want"
+  },
+  {
+    "dutch": "omdat",
+    "english": "because"
+  },
+  {
+    "dutch": "werktijden",
+    "english": "working times"
+  },
+  {
+    "dutch": "cursus",
+    "english": "course"
+  },
+  {
+    "dutch": "repareren/maken",
+    "english": "fix/make"
+  },
+  {
+    "dutch": "vooral",
+    "english": "especially"
+  },
+  {
+    "dutch": "baan",
+    "english": "job"
+  },
+  {
+    "dutch": "opleiding",
+    "english": "education"
+  },
+  {
+    "dutch": "uiterlijk",
+    "english": "at the latest"
+  },
+  {
+    "dutch": "van tevoren",
+    "english": "up front"
+  },
+  {
+    "dutch": "folder",
+    "english": "brochure"
+  },
+  {
+    "dutch": "overzicht/schema",
+    "english": "survey"
+  },
+  {
+    "dutch": "verschillende/diverse",
+    "english": "various"
+  },
+  {
+    "dutch": "beginnen",
+    "english": "start"
+  },
+  {
+    "dutch": "waar.",
+    "english": "where"
+  },
+  {
+    "dutch": "of",
+    "english": "or"
+  },
+  {
+    "dutch": "bellen",
+    "english": "call"
+  },
+  {
+    "dutch": "normaal",
+    "english": "normal"
+  },
+  {
+    "dutch": "andere",
+    "english": "other"
+  },
+  {
+    "dutch": "dicht/gesloten",
+    "english": "closed"
+  },
+  {
+    "dutch": "de weg",
+    "english": "road"
+  },
+  {
+    "dutch": "bushalte",
+    "english": "busstop"
+  },
+  {
+    "dutch": "opstappen",
+    "english": "get up bus"
+  },
+  {
+    "dutch": "gemeente",
+    "english": "municipality"
+  },
+  {
+    "dutch": "mogen",
+    "english": "may"
+  },
+  {
+    "dutch": "kermis",
+    "english": "fair"
+  },
+  {
+    "dutch": "gebouw",
+    "english": "building"
+  },
+  {
+    "dutch": "studiecentrum",
+    "english": "studycentre"
+  },
+  {
+    "dutch": "lokaal",
+    "english": "classoom"
+  },
+  {
+    "dutch": "nieuw",
+    "english": "new"
+  },
+  {
+    "dutch": "verdieping/etage",
+    "english": "floor"
+  },
+  {
+    "dutch": "begane grond",
+    "english": "ground floor"
+  },
+  {
+    "dutch": "vanaf",
+    "english": "from"
+  },
+  {
+    "dutch": "weer",
+    "english": "again"
+  },
+  {
+    "dutch": "verbouwing",
+    "english": "renovation"
+  },
+  {
+    "dutch": "doorgaan",
+    "english": "take place/continu"
+  },
+  {
+    "dutch": "overslaan",
+    "english": "skip"
+  },
+  {
+    "dutch": "pauze",
+    "english": "break"
+  },
+  {
+    "dutch": "de regels",
+    "english": "rules"
+  },
+  {
+    "dutch": "klanten",
+    "english": "customers"
+  },
+  {
+    "dutch": "bepalen/besluiten",
+    "english": "decide"
+  },
+  {
+    "dutch": "stofzuigen",
+    "english": "vacuum cleaning"
+  },
+  {
+    "dutch": "speelgoed",
+    "english": "toys"
+  },
+  {
+    "dutch": "stil zitten",
+    "english": "sit still"
+  },
+  {
+    "dutch": "netjes",
+    "english": "decent"
+  },
+  {
+    "dutch": "schoonmaken",
+    "english": "clean"
+  },
+  {
+    "dutch": "alleen",
+    "english": "only"
+  },
+  {
+    "dutch": "opletten",
+    "english": "pay attention"
+  },
+  {
+    "dutch": "fijn",
+    "english": "fine"
+  },
+  {
+    "dutch": "vriendelijk",
+    "english": "friendly"
+  },
+  {
+    "dutch": "elkaar",
+    "english": "eachother"
+  },
+  {
+    "dutch": "te veel",
+    "english": "too much"
+  },
+  {
+    "dutch": "Maar",
+    "english": "but"
+  },
+  {
+    "dutch": "inhalen",
+    "english": "catch up"
+  },
+  {
+    "dutch": "missen",
+    "english": "miss"
+  },
+  {
+    "dutch": "vervelend",
+    "english": "annoying"
+  },
+  {
+    "dutch": "toets",
+    "english": "test"
+  },
+  {
+    "dutch": "tijdens",
+    "english": "during"
+  },
+  {
+    "dutch": "woordenboek",
+    "english": "dictionary"
+  },
+  {
+    "dutch": "slim",
+    "english": "smart"
+  },
+  {
+    "dutch": "opdrachten",
+    "english": "assignments"
+  },
+  {
+    "dutch": "trouwens",
+    "english": "by the way"
+  },
+  {
+    "dutch": "foto's",
+    "english": "pictures"
+  },
+  {
+    "dutch": "knipbeurt",
+    "english": "haircut"
+  },
+  {
+    "dutch": "aanmelden",
+    "english": "register"
+  },
+  {
+    "dutch": "een afspraak maken",
+    "english": "make an appointment"
+  },
+  {
+    "dutch": "nieuwsbrief",
+    "english": "newsletter"
+  },
+  {
+    "dutch": "dochtertje",
+    "english": "small daughter"
+  },
+  {
+    "dutch": "wassen",
+    "english": "wash"
+  },
+  {
+    "dutch": "knippen",
+    "english": "cut"
+  },
+  {
+    "dutch": "kinderen",
+    "english": "children"
+  },
+  {
+    "dutch": "verrassing",
+    "english": "surprise"
+  },
+  {
+    "dutch": "vieren",
+    "english": "celebrate"
+  },
+  {
+    "dutch": "getrouwd",
+    "english": "married"
+  },
+  {
+    "dutch": "zwembad",
+    "english": "swimmingpool"
+  },
+  {
+    "dutch": "lied",
+    "english": "song"
+  },
+  {
+    "dutch": "Ik heb geen idee",
+    "english": "I do not know"
+  },
+  {
+    "dutch": "geld",
+    "english": "money"
+  },
+  {
+    "dutch": "dat weet ze niet",
+    "english": "dont know"
+  },
+  {
+    "dutch": "feestdagen",
+    "english": "holidays"
+  },
+  {
+    "dutch": "vakantie",
+    "english": "holidays"
+  },
+  {
+    "dutch": "de rest",
+    "english": "remaining part"
+  },
+  {
+    "dutch": "sommige",
+    "english": "some"
+  },
+  {
+    "dutch": "afdeling",
+    "english": "department"
+  },
+  {
+    "dutch": "de reden",
+    "english": "reason"
+  },
+  {
+    "dutch": "simpel",
+    "english": "simple"
+  },
+  {
+    "dutch": "rustig",
+    "english": "quiet"
+  },
+  {
+    "dutch": "nadenken",
+    "english": "think hard"
+  },
+  {
+    "dutch": "inhoud",
+    "english": "contents"
+  },
+  {
+    "dutch": "planning",
+    "english": "planning"
+  },
+  {
+    "dutch": "manier",
+    "english": "way"
+  },
+  {
+    "dutch": "verschillende",
+    "english": "various"
+  },
+  {
+    "dutch": "bladzijde/pagina",
+    "english": "page"
+  },
+  {
+    "dutch": "opnieuw",
+    "english": "again and again"
+  },
+  {
+    "dutch": "onthouden",
+    "english": "remember"
+  },
+  {
+    "dutch": "uitzoeken",
+    "english": "find out"
+  },
+  {
+    "dutch": "omgeving",
+    "english": "environment"
+  },
+  {
+    "dutch": "tekst",
+    "english": "tekst"
+  },
+  {
+    "dutch": "het eerste",
+    "english": "first"
+  },
+  {
+    "dutch": "een beetje",
+    "english": "little bit"
+  },
+  {
+    "dutch": "neem",
+    "english": "take"
+  },
+  {
+    "dutch": "dorpsbewoner",
+    "english": "residents village"
+  },
+  {
+    "dutch": "rondom",
+    "english": "around"
+  },
+  {
+    "dutch": "oproepen",
+    "english": "a call"
+  },
+  {
+    "dutch": "jaarlijkse",
+    "english": "yearly"
+  },
+  {
+    "dutch": "weghalen",
+    "english": "remove"
+  },
+  {
+    "dutch": "wegslepen",
+    "english": "tow away"
+  },
+  {
+    "dutch": "gekocht/kopen",
+    "english": "paste tense buy"
+  },
+  {
+    "dutch": "betalen",
+    "english": "pay"
+  },
+  {
+    "dutch": "bezorging",
+    "english": "delivery"
+  },
+  {
+    "dutch": "levertijd",
+    "english": "deliverytime"
+  },
+  {
+    "dutch": "klantenservice",
+    "english": "customerservice"
+  },
+  {
+    "dutch": "zwemkleding",
+    "english": "swimming costume"
+  },
+  {
+    "dutch": "handdoek",
+    "english": "towel"
+  },
+  {
+    "dutch": "extre/meer",
+    "english": "more"
+  },
+  {
+    "dutch": "aanraden/adviseren",
+    "english": "advise"
+  },
+  {
+    "dutch": "meemogen",
+    "english": "may join"
+  },
+  {
+    "dutch": "portier",
+    "english": "porter"
+  },
+  {
+    "dutch": "bureau",
+    "english": "desk"
+  },
+  {
+    "dutch": "trein",
+    "english": "train"
+  },
+  {
+    "dutch": "merken",
+    "english": "notice"
+  },
+  {
+    "dutch": "ophalen",
+    "english": "pick up"
+  },
+  {
+    "dutch": "rits",
+    "english": "zipper"
+  },
+  {
+    "dutch": "rugtas",
+    "english": "backpack"
+  },
+  {
+    "dutch": "bril",
+    "english": "glasses"
+  },
+  {
+    "dutch": "portemonnee",
+    "english": "wallet"
+  },
+  {
+    "dutch": "boek",
+    "english": "book"
+  },
+  {
+    "dutch": "lunch",
+    "english": "lunch"
+  },
+  {
+    "dutch": "sportkleding",
+    "english": "sportcloth"
+  },
+  {
+    "dutch": "meemenen",
+    "english": "take along"
+  },
+  {
+    "dutch": "brood",
+    "english": "bread"
+  },
+  {
+    "dutch": "zelf",
+    "english": "yourself"
+  },
+  {
+    "dutch": "meedoen",
+    "english": "participate"
+  },
+  {
+    "dutch": "bruiloft",
+    "english": "wedding"
+  },
+  {
+    "dutch": "opgeven",
+    "english": "register"
+  },
+  {
+    "dutch": "cadeaubon",
+    "english": "giftcard"
+  },
+  {
+    "dutch": "kiezen",
+    "english": "choose/select"
+  },
+  {
+    "dutch": "gekozen/kiezen",
+    "english": "paste tense choose"
+  },
+  {
+    "dutch": "cadeau",
+    "english": "gift/present"
+  },
+  {
+    "dutch": "meest",
+    "english": "most"
+  },
+  {
+    "dutch": "verrassing",
+    "english": "suprise"
+  },
+  {
+    "dutch": "feestcommissie",
+    "english": "party committe"
+  },
+  {
+    "dutch": "taak",
+    "english": "task"
+  },
+  {
+    "dutch": "geregeld",
+    "english": "arranged"
+  },
+  {
+    "dutch": "EHBO",
+    "english": "Eerste hulp bij ongelukken"
+  },
+  {
+    "dutch": "basisschool/lagere school",
+    "english": "primary school"
+  },
+  {
+    "dutch": "meest geschikt",
+    "english": "most appropriate"
+  },
+  {
+    "dutch": "ouders",
+    "english": "parents"
+  },
+  {
+    "dutch": "verzorgers",
+    "english": "caretakers"
+  },
+  {
+    "dutch": "reanimeren",
+    "english": "reanimate"
+  },
+  {
+    "dutch": "bijeenkomsten",
+    "english": "meetings"
+  },
+  {
+    "dutch": "hoeveel",
+    "english": "how many"
+  },
+  {
+    "dutch": "bestaat uit",
+    "english": "consists of"
+  },
+  {
+    "dutch": "zoveel mogelijk",
+    "english": "as much as possible"
+  },
+  {
+    "dutch": "weggooien",
+    "english": "throw away"
+  },
+  {
+    "dutch": "repareren",
+    "english": "repair"
+  },
+  {
+    "dutch": "maken",
+    "english": "make"
+  },
+  {
+    "dutch": "terugbrengen",
+    "english": "bring back"
+  },
+  {
+    "dutch": "eigenaar",
+    "english": "owner"
+  },
+  {
+    "dutch": "gebruikte spullen",
+    "english": "used stiff"
+  },
+  {
+    "dutch": "regelmatig",
+    "english": "regular"
+  },
+  {
+    "dutch": "spullen/dingen",
+    "english": "stuff"
+  },
+  {
+    "dutch": "kapot/stuk",
+    "english": "broken"
+  },
+  {
+    "dutch": "controleren",
+    "english": "check"
+  },
+  {
+    "dutch": "proberen",
+    "english": "try"
+  },
+  {
+    "dutch": "verkopen",
+    "english": "sell"
+  },
+  {
+    "dutch": "niets",
+    "english": "nothing"
+  },
+  {
+    "dutch": "goede doelen",
+    "english": "charity"
+  },
+  {
+    "dutch": "medewerkers",
+    "english": "employees"
+  },
+  {
+    "dutch": "naartoe",
+    "english": "to"
+  },
+  {
+    "dutch": "kinderboerderij",
+    "english": "childrens farm"
+  },
+  {
+    "dutch": "vrijwilligers",
+    "english": "volunteers"
+  },
+  {
+    "dutch": "verdienen",
+    "english": "earn"
+  },
+  {
+    "dutch": "kiespijn",
+    "english": "toothache"
+  },
+  {
+    "dutch": "zo snel mogelijk",
+    "english": "as soon as possible"
+  },
+  {
+    "dutch": "receptie",
+    "english": "reception"
+  },
+  {
+    "dutch": "nood nummer",
+    "english": "emergency number"
+  },
+  {
+    "dutch": "praktijk",
+    "english": "practice"
+  },
+  {
+    "dutch": "Kindertandarts",
+    "english": "child dentist"
+  },
+  {
+    "dutch": "geopend",
+    "english": "open"
+  },
+  {
+    "dutch": "gesloten",
+    "english": "closed"
+  },
+  {
+    "dutch": "spoed",
+    "english": "emergency"
+  },
+  {
+    "dutch": "cv",
+    "english": "resume"
+  },
+  {
+    "dutch": "vacature",
+    "english": "vacancy"
+  },
+  {
+    "dutch": "een baan",
+    "english": "job"
+  },
+  {
+    "dutch": "buurthuis",
+    "english": "community center"
+  },
+  {
+    "dutch": "werkervaring",
+    "english": "workexperience"
+  },
+  {
+    "dutch": "persoonlijke gegevens",
+    "english": "personal details"
+  },
+  {
+    "dutch": "overig",
+    "english": "additional"
+  },
+  {
+    "dutch": "vrijwillig",
+    "english": "volunteerly"
+  },
+  {
+    "dutch": "zetten",
+    "english": "put"
+  },
+  {
+    "dutch": "rijbewijs",
+    "english": "drivers license"
+  },
+  {
+    "dutch": "scooter",
+    "english": "scooter"
+  },
+  {
+    "dutch": "buitenland",
+    "english": "abroad"
+  },
+  {
+    "dutch": "schriftelijk",
+    "english": "written"
+  },
+  {
+    "dutch": "buiten",
+    "english": "outside"
+  },
+  {
+    "dutch": "uiterlijk",
+    "english": "at the latetst"
+  },
+  {
+    "dutch": "open dag",
+    "english": "open day"
+  },
+  {
+    "dutch": "kunnen",
+    "english": "can"
+  },
+  {
+    "dutch": "helpen",
+    "english": "help"
+  },
+  {
+    "dutch": "openingstijden",
+    "english": "openingtimes"
+  },
+  {
+    "dutch": "ziek melden",
+    "english": "report ill"
+  },
+  {
+    "dutch": "leidinggevende",
+    "english": "leader"
+  },
+  {
+    "dutch": "secretariaat",
+    "english": "secretary"
+  },
+  {
+    "dutch": "bereiken",
+    "english": "reach"
+  },
+  {
+    "dutch": "bereikbaar",
+    "english": "reacheable"
+  },
+  {
+    "dutch": "bedrijfsarts",
+    "english": "company doctor"
+  },
+  {
+    "dutch": "altijd",
+    "english": "always"
+  },
+  {
+    "dutch": "op elk moment",
+    "english": "any moment"
+  },
+  {
+    "dutch": "uitnodiging",
+    "english": "invitation"
+  },
+  {
+    "dutch": "buurtbijeenkomst",
+    "english": "community meeting"
+  },
+  {
+    "dutch": "veranderingen",
+    "english": "changes"
+  },
+  {
+    "dutch": "ontvangst",
+    "english": "to welcome"
+  },
+  {
+    "dutch": "muzikaal",
+    "english": "musical"
+  },
+  {
+    "dutch": "optreden",
+    "english": "performance"
+  },
+  {
+    "dutch": "thema",
+    "english": "theme"
+  },
+  {
+    "dutch": "hapjes",
+    "english": "bites"
+  },
+  {
+    "dutch": "drankjes",
+    "english": "drinks"
+  },
+  {
+    "dutch": "muziek",
+    "english": "music"
+  },
+  {
+    "dutch": "activiteiten",
+    "english": "activities"
+  },
+  {
+    "dutch": "abonnement",
+    "english": "subscription"
+  },
+  {
+    "dutch": "basis",
+    "english": "base"
+  },
+  {
+    "dutch": "werkdagen",
+    "english": "workdays"
+  },
+  {
+    "dutch": "weekend",
+    "english": "weekend"
+  },
+  {
+    "dutch": "bedanken",
+    "english": "thank you"
+  },
+  {
+    "dutch": "gebruiken",
+    "english": "use"
+  },
+  {
+    "dutch": "durven",
+    "english": "dare"
+  },
+  {
+    "dutch": "beter",
+    "english": "better"
+  },
+  {
+    "dutch": "nooit",
+    "english": "never"
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult"
+  },
+  {
+    "dutch": "makkelijk",
+    "english": "easy"
+  },
+  {
+    "dutch": "fouten",
+    "english": "mistakes"
+  },
+  {
+    "dutch": "geholpen/helpen",
+    "english": "help"
+  },
+  {
+    "dutch": "zonder",
+    "english": "without"
+  },
+  {
+    "dutch": "anderen",
+    "english": "others"
+  },
+  {
+    "dutch": "taal",
+    "english": "language"
+  },
+  {
+    "dutch": "echt",
+    "english": "for real"
+  },
+  {
+    "dutch": "het is jammer",
+    "english": "Its a pity"
+  },
+  {
+    "dutch": "te lang",
+    "english": "too long"
+  },
+  {
+    "dutch": "te weinig",
+    "english": "not enough"
+  },
+  {
+    "dutch": "afgemaakt",
+    "english": "finished"
+  },
+  {
+    "dutch": "geslaagd",
+    "english": "passed exam"
+  },
+  {
+    "dutch": "weinig",
+    "english": "not a lot"
+  },
+  {
+    "dutch": "telefonisch spreekuur",
+    "english": "telephone call"
+  },
+  {
+    "dutch": "schuiven",
+    "english": "slide"
+  },
+  {
+    "dutch": "volgorde",
+    "english": "sequence"
+  },
+  {
+    "dutch": "boven",
+    "english": "up"
+  },
+  {
+    "dutch": "beneden",
+    "english": "down"
+  },
+  {
+    "dutch": "door elkaar",
+    "english": "through eachother"
+  },
+  {
+    "dutch": "niet alleen",
+    "english": "not only"
+  },
+  {
+    "dutch": "moeite",
+    "english": "trouble"
+  },
+  {
+    "dutch": "hoe lang",
+    "english": "how long"
+  },
+  {
+    "dutch": "ruilen",
+    "english": "swap/exchange"
+  },
+  {
+    "dutch": "eerste",
+    "english": "first"
+  },
+  {
+    "dutch": "klantenkaart",
+    "english": "customercard"
+  },
+  {
+    "dutch": "dweilen",
+    "english": "mop the floor"
+  },
+  {
+    "dutch": "deden",
+    "english": "past tense of doen"
+  },
+  {
+    "dutch": "1 keer",
+    "english": "one time"
+  },
+  {
+    "dutch": "vies",
+    "english": "dirty"
+  },
+  {
+    "dutch": "derde",
+    "english": "third"
+  }
+]

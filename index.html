@@ -200,8 +200,8 @@
   </main>
 
   <script>
-    // 1) Add Dutch-English word pairs here.
-    const words = [
+    // Fallback list (used if data/words.json cannot be loaded).
+    const fallbackWords = [
       { dutch: "huis", english: "house" },
       { dutch: "boek", english: "book" },
       { dutch: "water", english: "water" },
@@ -209,7 +209,10 @@
       { dutch: "appel", english: "apple" }
     ];
 
-    // 2) Keep track of which card we are on.
+    // This will hold the active word list.
+    let words = [...fallbackWords];
+
+    // Keep track of which card we are on.
     let currentIndex = 0;
 
     // 3) Get the elements we need to update.
@@ -220,8 +223,41 @@
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
 
+    // Keep only valid rows from JSON files.
+    function sanitizeWords(rawWords) {
+      if (!Array.isArray(rawWords)) {
+        return [];
+      }
+
+      return rawWords
+        .filter(function (item) {
+          return (
+            item &&
+            typeof item.dutch === "string" &&
+            typeof item.english === "string"
+          );
+        })
+        .map(function (item) {
+          return {
+            dutch: item.dutch.trim(),
+            english: item.english.trim()
+          };
+        })
+        .filter(function (item) {
+          return item.dutch && item.english;
+        });
+    }
+
     // Show the current card and always reset to the Dutch side.
     function renderCard() {
+      if (words.length === 0) {
+        dutchWord.textContent = "No words found";
+        englishWord.textContent = "Check data/words.json";
+        cardIndex.textContent = "Card 0 of 0";
+        flashcard.classList.remove("is-flipped");
+        return;
+      }
+
       const currentWord = words[currentIndex];
       dutchWord.textContent = currentWord.dutch;
       englishWord.textContent = currentWord.english;
@@ -238,13 +274,38 @@
 
     // Move to the next card (wraps from last back to first).
     function showNextCard() {
+      if (words.length === 0) return;
       currentIndex = (currentIndex + 1) % words.length;
       renderCard();
     }
 
     // Move to the previous card (wraps from first to last).
     function showPreviousCard() {
+      if (words.length === 0) return;
       currentIndex = (currentIndex - 1 + words.length) % words.length;
+      renderCard();
+    }
+
+    // Try to load words from data/words.json.
+    async function loadWordsFromDataFile() {
+      try {
+        const response = await fetch("./data/words.json", { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error("Could not load data/words.json");
+        }
+
+        const jsonWords = await response.json();
+        const cleanWords = sanitizeWords(jsonWords);
+
+        if (cleanWords.length > 0) {
+          words = cleanWords;
+        }
+      } catch (error) {
+        // Keep fallbackWords if loading fails.
+        console.warn("Using fallback words:", error);
+      }
+
+      currentIndex = 0;
       renderCard();
     }
 
@@ -264,8 +325,9 @@
       }
     });
 
-    // Initial draw.
+    // Initial draw and then load external word list if available.
     renderCard();
+    loadWordsFromDataFile();
   </script>
 </body>
 </html>
