@@ -315,12 +315,12 @@
 
     <p id="cardIndex" class="index">Card 1 of 5</p>
 
-    <div class="example-controls">
-      <button id="exampleBtn" class="example-btn" type="button">Example</button>
-    </div>
-
     <div id="exampleBox" class="example-box" hidden>
       <p id="exampleText"></p>
+    </div>
+
+    <div class="example-controls">
+      <button id="exampleBtn" class="example-btn" type="button">Example</button>
     </div>
 
     <div class="primary-actions">
@@ -411,6 +411,12 @@
 
     function randomFromArray(list) {
       return list[Math.floor(Math.random() * list.length)];
+    }
+
+    // ADDED (Example sentences):
+    // If a word has no explicit example, create a simple Dutch sentence.
+    function buildDefaultExampleSentence(dutchWord) {
+      return `Ik oefen het woord "${dutchWord}".`;
     }
 
     // ---------------------------------------------
@@ -569,15 +575,17 @@
           );
         })
         .map(function (item) {
+          const cleanDutch = item.dutch.trim();
           const cleanExample =
             typeof item.exampleDutch === "string"
               ? item.exampleDutch.trim()
               : "";
 
           return {
-            dutch: item.dutch.trim(),
+            dutch: cleanDutch,
             english: item.english.trim(),
-            exampleDutch: cleanExample
+            // Ensure every Dutch word has an example sentence.
+            exampleDutch: cleanExample || buildDefaultExampleSentence(cleanDutch)
           };
         })
         .filter(function (item) {
@@ -592,7 +600,8 @@
           dutch: pair.dutch,
           english: pair.english,
           count: 0,
-          exampleDutch: pair.exampleDutch || ""
+          // Ensure every word object always has an example sentence.
+          exampleDutch: pair.exampleDutch || buildDefaultExampleSentence(pair.dutch)
         };
       });
     }
