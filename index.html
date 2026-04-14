@@ -195,6 +195,7 @@
 
     <div class="controls">
       <button id="prevBtn" type="button">Previous</button>
+      <button id="shuffleBtn" type="button">Shuffle</button>
       <button id="nextBtn" type="button">Next</button>
     </div>
   </main>
@@ -209,8 +210,13 @@
       { dutch: "appel", english: "apple" }
     ];
 
-    // This will hold the active word list.
-    let words = [...fallbackWords];
+    // ADDED (Shuffle mode):
+    // Keep a source list in original order.
+    // We will never shuffle this list directly.
+    let sourceWords = [...fallbackWords];
+
+    // This is the active order currently shown in the app.
+    let words = [...sourceWords];
 
     // Keep track of which card we are on.
     let currentIndex = 0;
@@ -221,6 +227,7 @@
     const englishWord = document.getElementById("englishWord");
     const cardIndex = document.getElementById("cardIndex");
     const prevBtn = document.getElementById("prevBtn");
+    const shuffleBtn = document.getElementById("shuffleBtn");
     const nextBtn = document.getElementById("nextBtn");
 
     // Keep only valid rows from JSON files.
@@ -286,6 +293,30 @@
       renderCard();
     }
 
+    // ADDED (Shuffle mode):
+    // Fisher-Yates shuffle on a COPY, so original list order stays unchanged.
+    function fisherYatesShuffle(list) {
+      const shuffled = [...list];
+
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+        const temp = shuffled[i];
+        shuffled[i] = shuffled[randomIndex];
+        shuffled[randomIndex] = temp;
+      }
+
+      return shuffled;
+    }
+
+    // ADDED (Shuffle mode):
+    // Randomize card order, reset index, and show front side via renderCard().
+    function shuffleCards() {
+      if (sourceWords.length === 0) return;
+      words = fisherYatesShuffle(sourceWords);
+      currentIndex = 0;
+      renderCard();
+    }
+
     // Try to load words from data/words.json.
     async function loadWordsFromDataFile() {
       try {
@@ -298,7 +329,8 @@
         const cleanWords = sanitizeWords(jsonWords);
 
         if (cleanWords.length > 0) {
-          words = cleanWords;
+          sourceWords = cleanWords;
+          words = [...sourceWords];
         }
       } catch (error) {
         // Keep fallbackWords if loading fails.
@@ -315,6 +347,7 @@
     // Buttons for navigation.
     nextBtn.addEventListener("click", showNextCard);
     prevBtn.addEventListener("click", showPreviousCard);
+    shuffleBtn.addEventListener("click", shuffleCards);
 
     // Optional keyboard support for the card:
     // Enter or Space flips the card when focused.
