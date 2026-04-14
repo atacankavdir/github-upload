@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dutch Vocabulary Flashcards</title>
+  <style>
+    :root {
+      --bg-start: #f6f9ff;
+      --bg-end: #eaf3ff;
+      --card-front: #ffffff;
+      --card-back: #0f1f38;
+      --text-main: #13233a;
+      --text-light: #f2f7ff;
+      --accent: #2f6feb;
+      --shadow: 0 14px 35px rgba(16, 32, 56, 0.16);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh; /* Better on mobile browsers (including iPhone Safari). */
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: linear-gradient(150deg, var(--bg-start), var(--bg-end));
+      color: var(--text-main);
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .app {
+      width: min(560px, 100%);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+    }
+
+    .hint {
+      margin: 0 0 20px;
+      color: #455873;
+      font-size: 0.95rem;
+    }
+
+    /* This creates the 3D depth for the flip animation. */
+    .card-scene {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      min-height: 250px;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      transition: transform 420ms ease;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .card.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .card-front {
+      background: var(--card-front);
+      color: var(--text-main);
+    }
+
+    .card-back {
+      background: var(--card-back);
+      color: var(--text-light);
+      transform: rotateY(180deg);
+    }
+
+    .label {
+      margin: 0;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .word {
+      margin: 0;
+      font-size: clamp(1.8rem, 7vw, 2.7rem);
+      font-weight: 700;
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+
+    .index {
+      margin: 16px 0 20px;
+      font-size: 0.98rem;
+      color: #3f526e;
+      font-weight: 600;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      min-width: 118px;
+      min-height: 44px; /* Comfortable tap target for mobile. */
+      padding: 10px 18px;
+      border: 1px solid #d7e1f0;
+      border-radius: 12px;
+      background: #ffffff;
+      color: #11243f;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:hover {
+      border-color: #b9c9e0;
+      box-shadow: 0 8px 20px rgba(17, 36, 63, 0.1);
+      transform: translateY(-1px);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .card:focus-visible,
+    button:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        min-height: 230px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <h1>Dutch Flashcards</h1>
+    <p class="hint">Tap or click the card to flip it.</p>
+
+    <div class="card-scene">
+      <!-- The card has two sides: front (Dutch) and back (English). -->
+      <button id="flashcard" class="card" type="button" aria-label="Flashcard. Tap to flip.">
+        <div class="card-face card-front">
+          <p class="label">Dutch</p>
+          <p id="dutchWord" class="word">huis</p>
+        </div>
+        <div class="card-face card-back">
+          <p class="label">English</p>
+          <p id="englishWord" class="word">house</p>
+        </div>
+      </button>
+    </div>
+
+    <p id="cardIndex" class="index">Card 1 of 5</p>
+
+    <div class="controls">
+      <button id="prevBtn" type="button">Previous</button>
+      <button id="nextBtn" type="button">Next</button>
+    </div>
+  </main>
+
+  <script>
+    // 1) Add Dutch-English word pairs here.
+    const words = [
+      { dutch: "huis", english: "house" },
+      { dutch: "boek", english: "book" },
+      { dutch: "water", english: "water" },
+      { dutch: "fiets", english: "bicycle" },
+      { dutch: "appel", english: "apple" }
+    ];
+
+    // 2) Keep track of which card we are on.
+    let currentIndex = 0;
+
+    // 3) Get the elements we need to update.
+    const flashcard = document.getElementById("flashcard");
+    const dutchWord = document.getElementById("dutchWord");
+    const englishWord = document.getElementById("englishWord");
+    const cardIndex = document.getElementById("cardIndex");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    // Show the current card and always reset to the Dutch side.
+    function renderCard() {
+      const currentWord = words[currentIndex];
+      dutchWord.textContent = currentWord.dutch;
+      englishWord.textContent = currentWord.english;
+      cardIndex.textContent = `Card ${currentIndex + 1} of ${words.length}`;
+
+      // Remove flipped state so each new card starts on Dutch.
+      flashcard.classList.remove("is-flipped");
+    }
+
+    // Flip between Dutch and English.
+    function flipCard() {
+      flashcard.classList.toggle("is-flipped");
+    }
+
+    // Move to the next card (wraps from last back to first).
+    function showNextCard() {
+      currentIndex = (currentIndex + 1) % words.length;
+      renderCard();
+    }
+
+    // Move to the previous card (wraps from first to last).
+    function showPreviousCard() {
+      currentIndex = (currentIndex - 1 + words.length) % words.length;
+      renderCard();
+    }
+
+    // Click/tap to flip.
+    flashcard.addEventListener("click", flipCard);
+
+    // Buttons for navigation.
+    nextBtn.addEventListener("click", showNextCard);
+    prevBtn.addEventListener("click", showPreviousCard);
+
+    // Optional keyboard support for the card:
+    // Enter or Space flips the card when focused.
+    flashcard.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        flipCard();
+      }
+    });
+
+    // Initial draw.
+    renderCard();
+  </script>
+</body>
+</html>
