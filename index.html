@@ -184,6 +184,20 @@
       gap: 12px;
     }
 
+    .mode-switch {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mode-btn.is-active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent);
+    }
+
     .primary-actions {
       width: 100%;
       max-width: 460px;
@@ -228,6 +242,85 @@
       margin: 0;
     }
 
+    .quiz-panel {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid var(--card-border);
+      background: var(--card-front);
+      box-shadow: var(--shadow);
+      text-align: left;
+    }
+
+    .quiz-label {
+      margin: 0 0 6px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .quiz-word {
+      margin: 0 0 10px;
+      color: var(--text-main);
+      font-size: clamp(1.4rem, 6vw, 2rem);
+      font-weight: 700;
+    }
+
+    .quiz-progress {
+      margin: 0 0 12px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .quiz-answer-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .quiz-answer-input {
+      flex: 1 1 0;
+      min-height: 44px;
+      border: 1px solid var(--btn-border);
+      border-radius: 12px;
+      background: var(--btn-bg);
+      color: var(--text-main);
+      padding: 10px 12px;
+      font-size: 1rem;
+    }
+
+    .quiz-answer-input:focus {
+      outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      outline-offset: 1px;
+    }
+
+    .quiz-feedback {
+      margin: 12px 0 0;
+      min-height: 20px;
+      color: var(--text-main);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .quiz-complete {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--example-border);
+      background: var(--example-bg);
+      color: var(--example-text);
+    }
+
+    .quiz-complete p {
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
     button {
       min-width: 118px;
       min-height: 44px;
@@ -251,6 +344,13 @@
 
     button:active {
       transform: translateY(0);
+      box-shadow: none;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
       box-shadow: none;
     }
 
@@ -287,6 +387,11 @@
       .card {
         min-height: 230px;
       }
+
+      .quiz-answer-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
   </style>
 </head>
@@ -300,7 +405,14 @@
     <h1>Dutch Flashcards</h1>
     <p class="hint">Tap or click the card to flip it.</p>
 
-    <div class="card-scene">
+    <!-- ADDED (Quiz mode):
+         Simple mode switch between flashcards and quiz. -->
+    <div class="mode-switch">
+      <button id="flashcardModeBtn" class="mode-btn is-active" type="button">Flashcard</button>
+      <button id="quizModeBtn" class="mode-btn" type="button">Quiz</button>
+    </div>
+
+    <div id="cardScene" class="card-scene">
       <button id="flashcard" class="card" type="button" aria-label="Flashcard. Tap to flip.">
         <div class="card-face card-front">
           <p class="label">Dutch</p>
@@ -311,6 +423,34 @@
           <p id="englishWord" class="word">house</p>
         </div>
       </button>
+    </div>
+
+    <!-- ADDED (Quiz mode):
+         Static quiz area (no card flip) for typed English answers. -->
+    <div id="quizPanel" class="quiz-panel" hidden>
+      <p class="quiz-label">Dutch word</p>
+      <p id="quizDutchWord" class="quiz-word">huis</p>
+      <p id="quizProgress" class="quiz-progress">Question 1 of 10</p>
+
+      <div class="quiz-answer-row">
+        <input
+          id="quizAnswerInput"
+          class="quiz-answer-input"
+          type="text"
+          placeholder="Type English answer"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        >
+        <button id="checkAnswerBtn" type="button">Check</button>
+      </div>
+
+      <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+
+      <div id="quizCompleteBox" class="quiz-complete" hidden>
+        <p>Quiz complete!</p>
+        <button id="restartQuizBtn" type="button">Start New 10-Question Quiz</button>
+      </div>
     </div>
 
     <p id="cardIndex" class="index">Card 1 of 5</p>
@@ -351,6 +491,9 @@
     // Cooldown length: avoid reusing the last N shown words when possible.
     const COOLDOWN_LENGTH = 2;
 
+    // Quiz session length: change this number to make quiz sessions shorter/longer.
+    const QUIZ_SESSION_LENGTH = 10;
+
     // ---------------------------------------------
     // Fallback data (used if data/words.json fails)
     // ---------------------------------------------
@@ -376,13 +519,32 @@
     // Example sentence is hidden by default for each word.
     let isExampleVisible = false;
 
+    // ADDED (Quiz mode):
+    // Track mode and quiz session state.
+    let currentMode = "flashcard"; // "flashcard" or "quiz"
+    let isQuizChecked = false;
+    let wasQuizAnswerCorrect = false;
+    let quizCompletedCount = 0;
+    let isQuizComplete = false;
+
     // ---------------------------------------------
     // DOM references
     // ---------------------------------------------
     const flashcard = document.getElementById("flashcard");
+    const cardScene = document.getElementById("cardScene");
     const dutchWord = document.getElementById("dutchWord");
     const englishWord = document.getElementById("englishWord");
     const cardIndex = document.getElementById("cardIndex");
+    const flashcardModeBtn = document.getElementById("flashcardModeBtn");
+    const quizModeBtn = document.getElementById("quizModeBtn");
+    const quizPanel = document.getElementById("quizPanel");
+    const quizDutchWord = document.getElementById("quizDutchWord");
+    const quizProgress = document.getElementById("quizProgress");
+    const quizAnswerInput = document.getElementById("quizAnswerInput");
+    const checkAnswerBtn = document.getElementById("checkAnswerBtn");
+    const quizFeedback = document.getElementById("quizFeedback");
+    const quizCompleteBox = document.getElementById("quizCompleteBox");
+    const restartQuizBtn = document.getElementById("restartQuizBtn");
     const exampleBtn = document.getElementById("exampleBtn");
     const exampleBox = document.getElementById("exampleBox");
     const exampleText = document.getElementById("exampleText");
@@ -619,9 +781,12 @@
 
       words = applySavedCounts(baseWords);
       resetSessionTracking();
+      quizCompletedCount = 0;
+      isQuizComplete = false;
+      resetQuizQuestionState();
 
       if (words.length === 0) {
-        renderCard();
+        renderCurrentView();
         return;
       }
 
@@ -647,11 +812,29 @@
     }
 
     // ---------------------------------------------
-    // Card rendering + navigation
+    // Card + quiz rendering
     // ---------------------------------------------
     function getCurrentWord() {
       if (currentWordIndex < 0 || currentWordIndex >= words.length) return null;
       return words[currentWordIndex];
+    }
+
+    // ADDED (Quiz mode):
+    // Normalizes answers for simple exact matching:
+    // trim, lowercase, collapse repeated spaces.
+    function normalizeAnswer(text) {
+      return String(text || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+    }
+
+    function resetQuizQuestionState() {
+      isQuizChecked = false;
+      wasQuizAnswerCorrect = false;
+      quizAnswerInput.value = "";
+      quizAnswerInput.readOnly = false;
+      quizFeedback.textContent = "";
     }
 
     function renderCard() {
@@ -662,7 +845,6 @@
         englishWord.textContent = "Check data/words.json";
         cardIndex.textContent = "Card 0 of 0";
         flashcard.classList.remove("is-flipped");
-        renderExample();
         return;
       }
 
@@ -672,7 +854,69 @@
 
       // Always reset to front side when card changes.
       flashcard.classList.remove("is-flipped");
+    }
+
+    function renderQuizPanel() {
+      const currentWord = getCurrentWord();
+
+      if (!currentWord) {
+        quizDutchWord.textContent = "No words found";
+        quizProgress.textContent = `Question 0 of ${QUIZ_SESSION_LENGTH}`;
+        quizFeedback.textContent = "Add words to start the quiz.";
+        quizAnswerInput.value = "";
+        quizAnswerInput.disabled = true;
+        quizAnswerInput.readOnly = true;
+        checkAnswerBtn.disabled = true;
+        quizCompleteBox.hidden = true;
+        return;
+      }
+
+      quizDutchWord.textContent = currentWord.dutch;
+
+      const questionNumber = isQuizComplete
+        ? QUIZ_SESSION_LENGTH
+        : Math.min(quizCompletedCount + 1, QUIZ_SESSION_LENGTH);
+      quizProgress.textContent = `Question ${questionNumber} of ${QUIZ_SESSION_LENGTH}`;
+
+      if (isQuizChecked) {
+        const resultText = wasQuizAnswerCorrect ? "Correct." : "Not correct.";
+        quizFeedback.textContent = `${resultText} Correct answer: ${currentWord.english}`;
+      } else {
+        quizFeedback.textContent = "";
+      }
+
+      quizAnswerInput.disabled = isQuizComplete;
+      quizAnswerInput.readOnly = isQuizChecked || isQuizComplete;
+      checkAnswerBtn.disabled = isQuizChecked || isQuizComplete;
+      quizCompleteBox.hidden = !isQuizComplete;
+    }
+
+    function updateModeUi() {
+      const isQuizMode = currentMode === "quiz";
+
+      cardScene.hidden = isQuizMode;
+      quizPanel.hidden = !isQuizMode;
+      cardIndex.hidden = isQuizMode;
+
+      flashcardModeBtn.classList.toggle("is-active", !isQuizMode);
+      quizModeBtn.classList.toggle("is-active", isQuizMode);
+
+      if (isQuizMode) {
+        prevBtn.disabled = true;
+        nextBtn.disabled = !isQuizChecked || isQuizComplete || words.length === 0;
+        nextTimeBtn.disabled = !isQuizChecked || isQuizComplete || words.length === 0;
+      } else {
+        prevBtn.disabled = shownHistoryIds.length <= 1 || words.length === 0;
+        nextBtn.disabled = words.length === 0;
+        nextTimeBtn.disabled = words.length === 0;
+      }
+    }
+
+    function renderCurrentView() {
+      renderCard();
+      renderQuizPanel();
       renderExample();
+      updateModeUi();
     }
 
     // ADDED (Example sentences):
@@ -702,7 +946,7 @@
 
     function showWordAtIndex(index, options) {
       if (words.length === 0) {
-        renderCard();
+        renderCurrentView();
         return;
       }
 
@@ -717,7 +961,7 @@
 
       const currentWord = getCurrentWord();
       if (!currentWord) {
-        renderCard();
+        renderCurrentView();
         return;
       }
 
@@ -728,7 +972,11 @@
       // Reset reveal state whenever moving to a different word.
       isExampleVisible = false;
 
-      renderCard();
+      // ADDED (Quiz mode):
+      // Reset checked state whenever moving to a new word/question.
+      resetQuizQuestionState();
+
+      renderCurrentView();
     }
 
     function pickNextWordIndexWeighted() {
@@ -765,10 +1013,12 @@
     }
 
     function flipCard() {
+      if (currentMode !== "flashcard") return;
       flashcard.classList.toggle("is-flipped");
     }
 
     function showPreviousCard() {
+      if (currentMode !== "flashcard") return;
       if (shownHistoryIds.length <= 1 || words.length === 0) return;
 
       // Remove current item and go back to previous shown word.
@@ -787,23 +1037,106 @@
     // ---------------------------------------------
     // Learning actions
     // ---------------------------------------------
+    function completeQuizStepAndMoveForward() {
+      quizCompletedCount += 1;
+
+      // ADDED (Quiz mode):
+      // Stop the current session exactly at QUIZ_SESSION_LENGTH questions.
+      if (quizCompletedCount >= QUIZ_SESSION_LENGTH) {
+        isQuizComplete = true;
+        renderCurrentView();
+        return;
+      }
+
+      // Quiz mode uses the same weighted bucket scheduler as flashcard mode.
+      goToWeightedNextWord();
+    }
+
     // "Next" means success: increment count.
     function handleKnownWord() {
       const currentWord = getCurrentWord();
       if (!currentWord) return;
+      if (currentMode === "quiz" && (!isQuizChecked || isQuizComplete)) return;
 
+      // Count logic:
+      // "Next" means "I knew it", so increment count.
       currentWord.count += 1;
       saveProgress();
-      goToWeightedNextWord();
+
+      if (currentMode === "quiz") {
+        completeQuizStepAndMoveForward();
+      } else {
+        goToWeightedNextWord();
+      }
     }
 
     // "Next time!" means failure: reset count to 0.
     function handleNeedsPractice() {
       const currentWord = getCurrentWord();
       if (!currentWord) return;
+      if (currentMode === "quiz" && (!isQuizChecked || isQuizComplete)) return;
 
+      // Count logic:
+      // "Next time!" means "I need more practice", so reset count.
       currentWord.count = 0;
       saveProgress();
+
+      if (currentMode === "quiz") {
+        completeQuizStepAndMoveForward();
+      } else {
+        goToWeightedNextWord();
+      }
+    }
+
+    // ---------------------------------------------
+    // Quiz mode actions
+    // ---------------------------------------------
+    function checkQuizAnswer() {
+      if (currentMode !== "quiz" || isQuizComplete) return;
+
+      const currentWord = getCurrentWord();
+      if (!currentWord) return;
+
+      // Compare user answer using normalized text.
+      const userAnswer = normalizeAnswer(quizAnswerInput.value);
+      const expectedAnswer = normalizeAnswer(currentWord.english);
+
+      isQuizChecked = true;
+      wasQuizAnswerCorrect = userAnswer === expectedAnswer;
+      quizAnswerInput.readOnly = true;
+
+      renderCurrentView();
+    }
+
+    function switchMode(nextMode) {
+      if (nextMode !== "flashcard" && nextMode !== "quiz") return;
+      if (currentMode === nextMode) return;
+
+      // Mode toggle: switch between flashcard and quiz views.
+      currentMode = nextMode;
+
+      // ADDED (Quiz mode):
+      // Entering quiz resets the current question state (input/feedback/check flag),
+      // but keeps the current word and current quiz progress count.
+      if (currentMode === "quiz") {
+        resetQuizQuestionState();
+      }
+
+      renderCurrentView();
+    }
+
+    function restartQuizSession() {
+      // ADDED (Quiz mode):
+      // Start a fresh 10-question session from the current deck state.
+      quizCompletedCount = 0;
+      isQuizComplete = false;
+      resetQuizQuestionState();
+
+      if (words.length === 0) {
+        renderCurrentView();
+        return;
+      }
+
       goToWeightedNextWord();
     }
 
@@ -837,9 +1170,12 @@
       localStorage.removeItem(PROGRESS_STORAGE_KEY);
       words = cloneWords(baseWords);
       resetSessionTracking();
+      quizCompletedCount = 0;
+      isQuizComplete = false;
+      resetQuizQuestionState();
 
       if (words.length === 0) {
-        renderCard();
+        renderCurrentView();
         return;
       }
 
@@ -850,6 +1186,14 @@
     // Event listeners
     // ---------------------------------------------
     flashcard.addEventListener("click", flipCard);
+    flashcardModeBtn.addEventListener("click", function () {
+      switchMode("flashcard");
+    });
+    quizModeBtn.addEventListener("click", function () {
+      switchMode("quiz");
+    });
+    checkAnswerBtn.addEventListener("click", checkQuizAnswer);
+    restartQuizBtn.addEventListener("click", restartQuizSession);
     prevBtn.addEventListener("click", showPreviousCard);
     shuffleBtn.addEventListener("click", shuffleCards);
     nextBtn.addEventListener("click", handleKnownWord);
@@ -863,6 +1207,15 @@
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
         flipCard();
+      }
+    });
+
+    // Optional keyboard support for quiz:
+    // Press Enter in the input to run Check.
+    quizAnswerInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        checkQuizAnswer();
       }
     });
 
