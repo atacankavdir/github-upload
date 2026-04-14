@@ -10,6 +10,7 @@
       --bg-end: #eaf3ff;
       --card-front: #ffffff;
       --card-back: #0f1f38;
+      --card-border: #d8e2f1;
       --text-main: #13233a;
       --text-light: #f2f7ff;
       --text-muted: #455873;
@@ -37,6 +38,7 @@
       --bg-end: #121c2c;
       --card-front: #1a263b;
       --card-back: #0b1322;
+      --card-border: #324864;
       --text-main: #e6eefc;
       --text-light: #f4f7ff;
       --text-muted: #b9c7dd;
@@ -126,6 +128,7 @@
       gap: 8px;
       padding: 24px;
       border-radius: var(--radius);
+      border: 1px solid var(--card-border);
       box-shadow: var(--shadow);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
@@ -158,38 +161,41 @@
       text-wrap: balance;
     }
 
-    .index,
-    .learning-meta,
-    .action-hint {
-      color: var(--text-muted);
-    }
-
     .index {
-      margin: 16px 0 6px;
+      margin: 16px 0 18px;
       font-size: 0.98rem;
+      color: var(--text-muted);
       font-weight: 600;
     }
 
-    .learning-meta {
-      margin: 0 0 8px;
-      font-size: 0.92rem;
-      font-weight: 600;
+    .top-controls {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
     }
 
-    .action-hint {
-      margin: 0 0 16px;
-      font-size: 0.86rem;
+    .primary-actions {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
     }
 
-    .controls {
+    .primary-actions button {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .bottom-actions {
+      margin-top: 12px;
       display: flex;
       justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .secondary-controls {
-      margin-top: 10px;
     }
 
     button {
@@ -252,6 +258,11 @@
 </head>
 <body>
   <main class="app">
+    <div class="top-controls">
+      <button id="themeToggleBtn" type="button">Dark mode</button>
+      <button id="shuffleBtn" type="button">Shuffle</button>
+    </div>
+
     <h1>Dutch Flashcards</h1>
     <p class="hint">Tap or click the card to flip it.</p>
 
@@ -269,18 +280,14 @@
     </div>
 
     <p id="cardIndex" class="index">Card 1 of 5</p>
-    <p id="learningMeta" class="learning-meta">Count: 0 • Bucket: 1</p>
-    <p class="action-hint">Next = I knew it • Next time! = I need more practice</p>
 
-    <div class="controls">
-      <button id="themeToggleBtn" type="button">Dark mode</button>
+    <div class="primary-actions">
       <button id="prevBtn" type="button">Previous</button>
-      <button id="shuffleBtn" type="button">Shuffle</button>
       <button id="nextTimeBtn" class="practice-btn" type="button">Next time!</button>
       <button id="nextBtn" type="button">Next</button>
     </div>
 
-    <div class="controls secondary-controls">
+    <div class="bottom-actions">
       <button id="resetProgressBtn" class="reset-btn" type="button">Reset Progress</button>
     </div>
   </main>
@@ -329,7 +336,6 @@
     const dutchWord = document.getElementById("dutchWord");
     const englishWord = document.getElementById("englishWord");
     const cardIndex = document.getElementById("cardIndex");
-    const learningMeta = document.getElementById("learningMeta");
 
     const themeToggleBtn = document.getElementById("themeToggleBtn");
     const prevBtn = document.getElementById("prevBtn");
@@ -586,7 +592,6 @@
         dutchWord.textContent = "No words found";
         englishWord.textContent = "Check data/words.json";
         cardIndex.textContent = "Card 0 of 0";
-        learningMeta.textContent = "Count: - • Bucket: -";
         flashcard.classList.remove("is-flipped");
         return;
       }
@@ -594,7 +599,6 @@
       dutchWord.textContent = currentWord.dutch;
       englishWord.textContent = currentWord.english;
       cardIndex.textContent = `Card ${currentWordIndex + 1} of ${words.length}`;
-      learningMeta.textContent = `Count: ${currentWord.count} • Bucket: ${getBucketFromCount(currentWord.count)}`;
 
       // Always reset to front side when card changes.
       flashcard.classList.remove("is-flipped");
