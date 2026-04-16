@@ -1,1566 +1,3565 @@
 [
   {
     "dutch": "leeftijd",
-    "english": "age"
+    "english": "age",
+    "exampleDutch": "Ik oefen \"leeftijd\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "laatste",
-    "english": "last"
+    "english": "last",
+    "exampleDutch": "Ik oefen \"laatste\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "verkopers",
-    "english": "salesperson"
+    "english": "salesperson",
+    "exampleDutch": "Ik oefen \"verkopers\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "stoppen",
-    "english": "stop"
+    "english": "stop",
+    "exampleDutch": "Ik oefen \"stoppen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "bijzonder",
-    "english": "special"
+    "english": "special",
+    "exampleDutch": "Ik oefen \"bijzonder\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "feest",
-    "english": "party"
+    "english": "party",
+    "exampleDutch": "Ik oefen \"feest\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "kantine",
-    "english": "cantin"
+    "english": "cantin",
+    "exampleDutch": "Ik oefen \"kantine\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "cadeau",
-    "english": "gift"
+    "english": "gift",
+    "exampleDutch": "Ik oefen \"cadeau\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "afscheid nemen",
-    "english": "say goodby"
+    "english": "say goodby",
+    "exampleDutch": "Ik oefen \"afscheid nemen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "gezellig",
-    "english": "cozy"
+    "english": "cozy",
+    "exampleDutch": "Ik oefen \"gezellig\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "wanneer",
-    "english": "when"
+    "english": "when",
+    "exampleDutch": "Ik oefen \"wanneer\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "straks",
-    "english": "later"
+    "english": "later",
+    "exampleDutch": "Ik oefen \"straks\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "gratis",
-    "english": "free"
+    "english": "free",
+    "exampleDutch": "Ik oefen \"gratis\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst1.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "druk",
-    "english": "busy"
+    "english": "busy",
+    "exampleDutch": "Ik oefen \"druk\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "genoeg",
-    "english": "enough"
+    "english": "enough",
+    "exampleDutch": "Ik oefen \"genoeg\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "plek/plaats",
-    "english": "place"
+    "english": "place",
+    "exampleDutch": "Ik oefen \"plek/plaats\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "blijven",
-    "english": "stay"
+    "english": "stay",
+    "exampleDutch": "Ik oefen \"blijven\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "schoon",
-    "english": "clean"
+    "english": "clean",
+    "exampleDutch": "Ik oefen \"schoon\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "waarom",
-    "english": "why"
+    "english": "why",
+    "exampleDutch": "Ik oefen \"waarom\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "minder",
-    "english": "less"
+    "english": "less",
+    "exampleDutch": "Ik oefen \"minder\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vaker",
-    "english": "more often"
+    "english": "more often",
+    "exampleDutch": "Ik oefen \"vaker\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "hoe vaak",
-    "english": "how often"
+    "english": "how often",
+    "exampleDutch": "Ik oefen \"hoe vaak\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "werkdagen",
-    "english": "workingdays"
+    "english": "workingdays",
+    "exampleDutch": "Ik oefen \"werkdagen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vertrekken",
-    "english": "leave"
+    "english": "leave",
+    "exampleDutch": "Ik oefen \"vertrekken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "overdag",
-    "english": "during the day"
+    "english": "during the day",
+    "exampleDutch": "Ik oefen \"overdag\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "s avonds",
-    "english": "in the evening"
+    "english": "in the evening",
+    "exampleDutch": "Ik oefen \"s avonds\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vergadering",
-    "english": "meeting"
+    "english": "meeting",
+    "exampleDutch": "Ik oefen \"vergadering\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "buurt",
-    "english": "neighberhod"
+    "english": "neighberhod",
+    "exampleDutch": "Ik oefen \"buurt\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "afspreken",
-    "english": "make appointment"
+    "english": "make appointment",
+    "exampleDutch": "Ik oefen \"afspreken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "activiteit",
-    "english": "activity"
+    "english": "activity",
+    "exampleDutch": "Ik oefen \"activiteit\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "buurbewoners",
-    "english": "residents"
+    "english": "residents",
+    "exampleDutch": "Ik oefen \"buurbewoners\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "kosten",
-    "english": "charges"
+    "english": "charges",
+    "exampleDutch": "Ik oefen \"kosten\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "uitrekenen",
-    "english": "calculate"
+    "english": "calculate",
+    "exampleDutch": "Ik oefen \"uitrekenen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "duurder",
-    "english": "more expensive"
+    "english": "more expensive",
+    "exampleDutch": "Ik oefen \"duurder\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "sturen",
-    "english": "send"
+    "english": "send",
+    "exampleDutch": "Ik oefen \"sturen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "belangrijk",
-    "english": "important"
+    "english": "important",
+    "exampleDutch": "Ik oefen \"belangrijk\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "moeten",
-    "english": "must"
+    "english": "must",
+    "exampleDutch": "Ik oefen \"moeten\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "iedereen",
-    "english": "everybody"
+    "english": "everybody",
+    "exampleDutch": "Ik oefen \"iedereen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vinden",
-    "english": "opinion"
+    "english": "opinion",
+    "exampleDutch": "Ik oefen \"vinden\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "opsturen",
-    "english": "send"
+    "english": "send",
+    "exampleDutch": "Ik oefen \"opsturen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "toen",
-    "english": "then"
+    "english": "then",
+    "exampleDutch": "Ik oefen \"toen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "spelletjes",
-    "english": "games"
+    "english": "games",
+    "exampleDutch": "Ik oefen \"spelletjes\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "pannekoeken",
-    "english": "pancakes"
+    "english": "pancakes",
+    "exampleDutch": "Ik oefen \"pannekoeken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "hoe duur",
-    "english": "how expensive"
+    "english": "how expensive",
+    "exampleDutch": "Ik oefen \"hoe duur\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vorig jaar",
-    "english": "last year"
+    "english": "last year",
+    "exampleDutch": "Ik oefen \"vorig jaar\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "bespreken",
-    "english": "discuss"
+    "english": "discuss",
+    "exampleDutch": "Ik oefen \"bespreken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "groeien",
-    "english": "grow/expand"
+    "english": "grow/expand",
+    "exampleDutch": "Ik oefen \"groeien\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "bekend",
-    "english": "famous"
+    "english": "famous",
+    "exampleDutch": "Ik oefen \"bekend\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "verkopers",
-    "english": "salespeople"
+    "english": "salespeople",
+    "exampleDutch": "Ik oefen \"verkopers\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vriendelijk",
-    "english": "friendly/kind"
+    "english": "friendly/kind",
+    "exampleDutch": "Ik oefen \"vriendelijk\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "tevreden",
-    "english": "satisfied"
+    "english": "satisfied",
+    "exampleDutch": "Ik oefen \"tevreden\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "doordeweeks",
-    "english": "throughout the week"
+    "english": "throughout the week",
+    "exampleDutch": "Ik oefen \"doordeweeks\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "ervaring",
-    "english": "experience"
+    "english": "experience",
+    "exampleDutch": "Ik oefen \"ervaring\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "voordeel",
-    "english": "advantage"
+    "english": "advantage",
+    "exampleDutch": "Ik oefen \"voordeel\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "nadeel",
-    "english": "disadvantage"
+    "english": "disadvantage",
+    "exampleDutch": "Ik oefen \"nadeel\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "omgaan met",
-    "english": "to handle"
+    "english": "to handle",
+    "exampleDutch": "Ik oefen \"omgaan met\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "beschikbaar",
-    "english": "available"
+    "english": "available",
+    "exampleDutch": "Ik oefen \"beschikbaar\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "eerder",
-    "english": "earlier"
+    "english": "earlier",
+    "exampleDutch": "Ik oefen \"eerder\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "kiezen",
-    "english": "choose"
+    "english": "choose",
+    "exampleDutch": "Ik oefen \"kiezen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "plekken",
-    "english": "places"
+    "english": "places",
+    "exampleDutch": "Ik oefen \"plekken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "geschiedenis",
-    "english": "history"
+    "english": "history",
+    "exampleDutch": "Ik oefen \"geschiedenis\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vertellen",
-    "english": "tell"
+    "english": "tell",
+    "exampleDutch": "Ik oefen \"vertellen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "oefenen",
-    "english": "practice"
+    "english": "practice",
+    "exampleDutch": "Ik oefen \"oefenen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "bezoek",
-    "english": "visitors"
+    "english": "visitors",
+    "exampleDutch": "Ik oefen \"bezoek\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "gisteren",
-    "english": "yesterday"
+    "english": "yesterday",
+    "exampleDutch": "Ik oefen \"gisteren\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "samen",
-    "english": "together"
+    "english": "together",
+    "exampleDutch": "Ik oefen \"samen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "zoeken",
-    "english": "looking for/search"
+    "english": "looking for/search",
+    "exampleDutch": "Ik oefen \"zoeken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "winkels",
-    "english": "shops"
+    "english": "shops",
+    "exampleDutch": "Ik oefen \"winkels\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "daarover",
-    "english": "about that"
+    "english": "about that",
+    "exampleDutch": "Ik oefen \"daarover\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "informatie",
-    "english": "information"
+    "english": "information",
+    "exampleDutch": "Ik oefen \"informatie\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "afspreken",
-    "english": "meet/make appointment"
+    "english": "meet/make appointment",
+    "exampleDutch": "Ik oefen \"afspreken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "werkrooster",
-    "english": "workingschedule"
+    "english": "workingschedule",
+    "exampleDutch": "Ik oefen \"werkrooster\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "probleem",
-    "english": "problem"
+    "english": "problem",
+    "exampleDutch": "Ik oefen \"probleem\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "gebroken",
-    "english": "broken"
+    "english": "broken",
+    "exampleDutch": "Ik oefen \"gebroken\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "extra/meer",
-    "english": "more"
+    "english": "more",
+    "exampleDutch": "Ik oefen \"extra/meer\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "daarom",
-    "english": "thats why"
+    "english": "thats why",
+    "exampleDutch": "Ik oefen \"daarom\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "laten weten",
-    "english": "let know"
+    "english": "let know",
+    "exampleDutch": "Ik oefen \"laten weten\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "gereedschap",
-    "english": "tools"
+    "english": "tools",
+    "exampleDutch": "Ik oefen \"gereedschap\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "meenemen",
-    "english": "take along"
+    "english": "take along",
+    "exampleDutch": "Ik oefen \"meenemen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "Theoriebook",
-    "english": "theorybook"
+    "english": "theorybook",
+    "exampleDutch": "Ik oefen \"Theoriebook\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "bestellen",
-    "english": "order"
+    "english": "order",
+    "exampleDutch": "Ik oefen \"bestellen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "soorten",
-    "english": "variaties"
+    "english": "variaties",
+    "exampleDutch": "Ik oefen \"soorten\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "meubel",
-    "english": "furniture"
+    "english": "furniture",
+    "exampleDutch": "Ik oefen \"meubel\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "ontwerpen",
-    "english": "design"
+    "english": "design",
+    "exampleDutch": "Ik oefen \"ontwerpen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "inschrijven",
-    "english": "register"
+    "english": "register",
+    "exampleDutch": "Ik oefen \"inschrijven\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "het enige",
-    "english": "the only thing"
+    "english": "the only thing",
+    "exampleDutch": "Ik oefen \"het enige\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "hout",
-    "english": "wood"
+    "english": "wood",
+    "exampleDutch": "Ik oefen \"hout\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "daarmee",
-    "english": "with that"
+    "english": "with that",
+    "exampleDutch": "Ik oefen \"daarmee\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "op tijd",
-    "english": "on time"
+    "english": "on time",
+    "exampleDutch": "Ik oefen \"op tijd\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "afmelden",
-    "english": "log out"
+    "english": "log out",
+    "exampleDutch": "Ik oefen \"afmelden\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "verhuizen",
-    "english": "move"
+    "english": "move",
+    "exampleDutch": "Ik oefen \"verhuizen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "tandarts",
-    "english": "dentist"
+    "english": "dentist",
+    "exampleDutch": "Ik oefen \"tandarts\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "afspraak",
-    "english": "appointment"
+    "english": "appointment",
+    "exampleDutch": "Ik oefen \"afspraak\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "helaas",
-    "english": "unfortunately"
+    "english": "unfortunately",
+    "exampleDutch": "Ik oefen \"helaas\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "verplaatst",
-    "english": "rescheduled"
+    "english": "rescheduled",
+    "exampleDutch": "Ik oefen \"verplaatst\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "hetzelfde",
-    "english": "same"
+    "english": "same",
+    "exampleDutch": "Ik oefen \"hetzelfde\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "voldoende",
-    "english": "enough"
+    "english": "enough",
+    "exampleDutch": "Ik oefen \"voldoende\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "namelijk",
-    "english": "namely"
+    "english": "namely",
+    "exampleDutch": "Ik oefen \"namelijk\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "uitleggen",
-    "english": "explain"
+    "english": "explain",
+    "exampleDutch": "Ik oefen \"uitleggen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "vakantierooster",
-    "english": "holidays schedule"
+    "english": "holidays schedule",
+    "exampleDutch": "Ik oefen \"vakantierooster\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "aanvragen",
-    "english": "apply"
+    "english": "apply",
+    "exampleDutch": "Ik oefen \"aanvragen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "aan het werk",
-    "english": "at work"
+    "english": "at work",
+    "exampleDutch": "Ik oefen \"aan het werk\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "balie",
-    "english": "desk/counter"
+    "english": "desk/counter",
+    "exampleDutch": "Ik oefen \"balie\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "vergeten",
-    "english": "forget"
+    "english": "forget",
+    "exampleDutch": "Ik oefen \"vergeten\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "nodig",
-    "english": "needed"
+    "english": "needed",
+    "exampleDutch": "Ik oefen \"nodig\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "telefoon opnemen",
-    "english": "answer telephone"
+    "english": "answer telephone",
+    "exampleDutch": "Ik oefen \"telefoon opnemen\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "achter elkaar",
-    "english": "in one row"
+    "english": "in one row",
+    "exampleDutch": "Ik oefen \"achter elkaar\".",
+    "sourceFile": "excelwoorden3.xlsx",
+    "sourceFiles": [
+      "excelwoorden3.xlsx"
+    ]
   },
   {
     "dutch": "weten",
-    "english": "to know"
+    "english": "to know",
+    "exampleDutch": "Ik oefen \"weten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "kennis",
-    "english": "knowledge"
+    "english": "knowledge",
+    "exampleDutch": "Ik oefen \"kennis\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "reden",
-    "english": "reason"
+    "english": "reason",
+    "exampleDutch": "Ik oefen \"reden\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "praten",
-    "english": "talk"
+    "english": "talk",
+    "exampleDutch": "Ik oefen \"praten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "studeren",
-    "english": "study"
+    "english": "study",
+    "exampleDutch": "Ik oefen \"studeren\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "zoeken",
-    "english": "looking for"
+    "english": "looking for",
+    "exampleDutch": "Ik oefen \"zoeken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "werken",
-    "english": "work"
+    "english": "work",
+    "exampleDutch": "Ik oefen \"werken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "dicht",
-    "english": "closed"
+    "english": "closed",
+    "exampleDutch": "Ik oefen \"dicht\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "taken",
-    "english": "tasks"
+    "english": "tasks",
+    "exampleDutch": "Ik oefen \"taken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "veranderen",
-    "english": "change"
+    "english": "change",
+    "exampleDutch": "Ik oefen \"veranderen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "winkel",
-    "english": "shop"
+    "english": "shop",
+    "exampleDutch": "Ik oefen \"winkel\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "volgende week",
-    "english": "next week"
+    "english": "next week",
+    "exampleDutch": "Ik oefen \"volgende week\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vragen",
-    "english": "questions"
+    "english": "questions",
+    "exampleDutch": "Ik oefen \"vragen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "horen",
-    "english": "hear"
+    "english": "hear",
+    "exampleDutch": "Ik oefen \"horen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "maand",
-    "english": "month"
+    "english": "month",
+    "exampleDutch": "Ik oefen \"maand\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "tot",
-    "english": "untill"
+    "english": "untill",
+    "exampleDutch": "Ik oefen \"tot\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "mensen",
-    "english": "people"
+    "english": "people",
+    "exampleDutch": "Ik oefen \"mensen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "rooster",
-    "english": "schedule"
+    "english": "schedule",
+    "exampleDutch": "Ik oefen \"rooster\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "natuurlijk",
-    "english": "off course"
+    "english": "off course",
+    "exampleDutch": "Ik oefen \"natuurlijk\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "allemaal",
-    "english": "all"
+    "english": "all",
+    "exampleDutch": "Ik oefen \"allemaal\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "misschien",
-    "english": "maybe"
+    "english": "maybe",
+    "exampleDutch": "Ik oefen \"misschien\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "volgende maand",
-    "english": "next month"
+    "english": "next month",
+    "exampleDutch": "Ik oefen \"volgende maand\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "iedere",
-    "english": "every"
+    "english": "every",
+    "exampleDutch": "Ik oefen \"iedere\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "langer",
-    "english": "longer"
+    "english": "longer",
+    "exampleDutch": "Ik oefen \"langer\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "willen",
-    "english": "want"
+    "english": "want",
+    "exampleDutch": "Ik oefen \"willen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "omdat",
-    "english": "because"
+    "english": "because",
+    "exampleDutch": "Ik oefen \"omdat\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "werktijden",
-    "english": "working times"
+    "english": "working times",
+    "exampleDutch": "Ik oefen \"werktijden\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "cursus",
-    "english": "course"
+    "english": "course",
+    "exampleDutch": "Ik oefen \"cursus\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "repareren/maken",
-    "english": "fix/make"
+    "english": "fix/make",
+    "exampleDutch": "Ik oefen \"repareren/maken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vooral",
-    "english": "especially"
+    "english": "especially",
+    "exampleDutch": "Ik oefen \"vooral\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "baan",
-    "english": "job"
+    "english": "job",
+    "exampleDutch": "Ik oefen \"baan\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "opleiding",
-    "english": "education"
+    "english": "education",
+    "exampleDutch": "Ik oefen \"opleiding\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "uiterlijk",
-    "english": "at the latest"
+    "english": "at the latest",
+    "exampleDutch": "Ik oefen \"uiterlijk\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "van tevoren",
-    "english": "up front"
+    "english": "up front",
+    "exampleDutch": "Ik oefen \"van tevoren\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "folder",
-    "english": "brochure"
+    "english": "brochure",
+    "exampleDutch": "Ik oefen \"folder\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "overzicht/schema",
-    "english": "survey"
+    "english": "survey",
+    "exampleDutch": "Ik oefen \"overzicht/schema\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "verschillende/diverse",
-    "english": "various"
+    "english": "various",
+    "exampleDutch": "Ik oefen \"verschillende/diverse\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "beginnen",
-    "english": "start"
+    "english": "start",
+    "exampleDutch": "Ik oefen \"beginnen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "waar.",
-    "english": "where"
+    "english": "where",
+    "exampleDutch": "Ik oefen \"waar.\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "of",
-    "english": "or"
+    "english": "or",
+    "exampleDutch": "Ik oefen \"of\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bellen",
-    "english": "call"
+    "english": "call",
+    "exampleDutch": "Ik oefen \"bellen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "normaal",
-    "english": "normal"
+    "english": "normal",
+    "exampleDutch": "Ik oefen \"normaal\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "andere",
-    "english": "other"
+    "english": "other",
+    "exampleDutch": "Ik oefen \"andere\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "dicht/gesloten",
-    "english": "closed"
+    "english": "closed",
+    "exampleDutch": "Ik oefen \"dicht/gesloten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "de weg",
-    "english": "road"
+    "english": "road",
+    "exampleDutch": "Ik oefen \"de weg\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "bushalte",
-    "english": "busstop"
+    "english": "busstop",
+    "exampleDutch": "Ik oefen \"bushalte\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "opstappen",
-    "english": "get up bus"
+    "english": "get up bus",
+    "exampleDutch": "Ik oefen \"opstappen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "gemeente",
-    "english": "municipality"
+    "english": "municipality",
+    "exampleDutch": "Ik oefen \"gemeente\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "mogen",
-    "english": "may"
+    "english": "may",
+    "exampleDutch": "Ik oefen \"mogen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "kermis",
-    "english": "fair"
+    "english": "fair",
+    "exampleDutch": "Ik oefen \"kermis\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "gebouw",
-    "english": "building"
+    "english": "building",
+    "exampleDutch": "Ik oefen \"gebouw\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "studiecentrum",
-    "english": "studycentre"
+    "english": "studycentre",
+    "exampleDutch": "Ik oefen \"studiecentrum\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "lokaal",
-    "english": "classoom"
+    "english": "classoom",
+    "exampleDutch": "Ik oefen \"lokaal\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "nieuw",
-    "english": "new"
+    "english": "new",
+    "exampleDutch": "Ik oefen \"nieuw\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "verdieping/etage",
-    "english": "floor"
+    "english": "floor",
+    "exampleDutch": "Ik oefen \"verdieping/etage\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "begane grond",
-    "english": "ground floor"
+    "english": "ground floor",
+    "exampleDutch": "Ik oefen \"begane grond\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vanaf",
-    "english": "from"
+    "english": "from",
+    "exampleDutch": "Ik oefen \"vanaf\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "weer",
-    "english": "again"
+    "english": "again",
+    "exampleDutch": "Ik oefen \"weer\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "verbouwing",
-    "english": "renovation"
+    "english": "renovation",
+    "exampleDutch": "Ik oefen \"verbouwing\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "doorgaan",
-    "english": "take place/continu"
+    "english": "take place/continu",
+    "exampleDutch": "Ik oefen \"doorgaan\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "overslaan",
-    "english": "skip"
+    "english": "skip",
+    "exampleDutch": "Ik oefen \"overslaan\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "pauze",
-    "english": "break"
+    "english": "break",
+    "exampleDutch": "Ik oefen \"pauze\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "de regels",
-    "english": "rules"
+    "english": "rules",
+    "exampleDutch": "Ik oefen \"de regels\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "klanten",
-    "english": "customers"
+    "english": "customers",
+    "exampleDutch": "Ik oefen \"klanten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "bepalen/besluiten",
-    "english": "decide"
+    "english": "decide",
+    "exampleDutch": "Ik oefen \"bepalen/besluiten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "stofzuigen",
-    "english": "vacuum cleaning"
+    "english": "vacuum cleaning",
+    "exampleDutch": "Ik oefen \"stofzuigen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "speelgoed",
-    "english": "toys"
+    "english": "toys",
+    "exampleDutch": "Ik oefen \"speelgoed\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "stil zitten",
-    "english": "sit still"
+    "english": "sit still",
+    "exampleDutch": "Ik oefen \"stil zitten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "netjes",
-    "english": "decent"
+    "english": "decent",
+    "exampleDutch": "Ik oefen \"netjes\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "schoonmaken",
-    "english": "clean"
+    "english": "clean",
+    "exampleDutch": "Ik oefen \"schoonmaken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "alleen",
-    "english": "only"
+    "english": "only",
+    "exampleDutch": "Ik oefen \"alleen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "opletten",
-    "english": "pay attention"
+    "english": "pay attention",
+    "exampleDutch": "Ik oefen \"opletten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "fijn",
-    "english": "fine"
+    "english": "fine",
+    "exampleDutch": "Ik oefen \"fijn\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vriendelijk",
-    "english": "friendly"
+    "english": "friendly",
+    "exampleDutch": "Ik oefen \"vriendelijk\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "elkaar",
-    "english": "eachother"
+    "english": "eachother",
+    "exampleDutch": "Ik oefen \"elkaar\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "te veel",
-    "english": "too much"
+    "english": "too much",
+    "exampleDutch": "Ik oefen \"te veel\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "Maar",
-    "english": "but"
+    "english": "but",
+    "exampleDutch": "Ik oefen \"Maar\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "inhalen",
-    "english": "catch up"
+    "english": "catch up",
+    "exampleDutch": "Ik oefen \"inhalen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "missen",
-    "english": "miss"
+    "english": "miss",
+    "exampleDutch": "Ik oefen \"missen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vervelend",
-    "english": "annoying"
+    "english": "annoying",
+    "exampleDutch": "Ik oefen \"vervelend\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "toets",
-    "english": "test"
+    "english": "test",
+    "exampleDutch": "Ik oefen \"toets\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "tijdens",
-    "english": "during"
+    "english": "during",
+    "exampleDutch": "Ik oefen \"tijdens\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "woordenboek",
-    "english": "dictionary"
+    "english": "dictionary",
+    "exampleDutch": "Ik oefen \"woordenboek\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "slim",
-    "english": "smart"
+    "english": "smart",
+    "exampleDutch": "Ik oefen \"slim\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "opdrachten",
-    "english": "assignments"
+    "english": "assignments",
+    "exampleDutch": "Ik oefen \"opdrachten\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "trouwens",
-    "english": "by the way"
+    "english": "by the way",
+    "exampleDutch": "Ik oefen \"trouwens\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "foto's",
-    "english": "pictures"
+    "english": "pictures",
+    "exampleDutch": "Ik oefen \"foto's\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "knipbeurt",
-    "english": "haircut"
+    "english": "haircut",
+    "exampleDutch": "Ik oefen \"knipbeurt\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "aanmelden",
-    "english": "register"
+    "english": "register",
+    "exampleDutch": "Ik oefen \"aanmelden\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "een afspraak maken",
-    "english": "make an appointment"
+    "english": "make an appointment",
+    "exampleDutch": "Ik oefen \"een afspraak maken\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "nieuwsbrief",
-    "english": "newsletter"
+    "english": "newsletter",
+    "exampleDutch": "Ik oefen \"nieuwsbrief\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "dochtertje",
-    "english": "small daughter"
+    "english": "small daughter",
+    "exampleDutch": "Ik oefen \"dochtertje\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "wassen",
-    "english": "wash"
+    "english": "wash",
+    "exampleDutch": "Ik oefen \"wassen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "knippen",
-    "english": "cut"
+    "english": "cut",
+    "exampleDutch": "Ik oefen \"knippen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "kinderen",
-    "english": "children"
+    "english": "children",
+    "exampleDutch": "Ik oefen \"kinderen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verrassing",
-    "english": "surprise"
+    "english": "surprise",
+    "exampleDutch": "Ik oefen \"verrassing\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vieren",
-    "english": "celebrate"
+    "english": "celebrate",
+    "exampleDutch": "Ik oefen \"vieren\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "getrouwd",
-    "english": "married"
+    "english": "married",
+    "exampleDutch": "Ik oefen \"getrouwd\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "zwembad",
-    "english": "swimmingpool"
+    "english": "swimmingpool",
+    "exampleDutch": "Ik oefen \"zwembad\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "lied",
-    "english": "song"
+    "english": "song",
+    "exampleDutch": "Ik oefen \"lied\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "Ik heb geen idee",
-    "english": "I do not know"
+    "english": "I do not know",
+    "exampleDutch": "Ik oefen \"Ik heb geen idee\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "geld",
-    "english": "money"
+    "english": "money",
+    "exampleDutch": "Ik oefen \"geld\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "dat weet ze niet",
-    "english": "dont know"
+    "english": "dont know",
+    "exampleDutch": "Ik oefen \"dat weet ze niet\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "feestdagen",
-    "english": "holidays"
+    "english": "holidays",
+    "exampleDutch": "Ik oefen \"feestdagen\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "vakantie",
-    "english": "holidays"
+    "english": "holidays",
+    "exampleDutch": "Ik oefen \"vakantie\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "de rest",
-    "english": "remaining part"
+    "english": "remaining part",
+    "exampleDutch": "Ik oefen \"de rest\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "sommige",
-    "english": "some"
+    "english": "some",
+    "exampleDutch": "Ik oefen \"sommige\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "afdeling",
-    "english": "department"
+    "english": "department",
+    "exampleDutch": "Ik oefen \"afdeling\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "de reden",
-    "english": "reason"
+    "english": "reason",
+    "exampleDutch": "Ik oefen \"de reden\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "simpel",
-    "english": "simple"
+    "english": "simple",
+    "exampleDutch": "Ik oefen \"simpel\".",
+    "sourceFile": "excelwoorden4.xlsx",
+    "sourceFiles": [
+      "excelwoorden4.xlsx"
+    ]
   },
   {
     "dutch": "rustig",
-    "english": "quiet"
+    "english": "quiet",
+    "exampleDutch": "Ik oefen \"rustig\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "nadenken",
-    "english": "think hard"
+    "english": "think hard",
+    "exampleDutch": "Ik oefen \"nadenken\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "inhoud",
-    "english": "contents"
+    "english": "contents",
+    "exampleDutch": "Ik oefen \"inhoud\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "planning",
-    "english": "planning"
+    "english": "planning",
+    "exampleDutch": "Ik oefen \"planning\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "manier",
-    "english": "way"
+    "english": "way",
+    "exampleDutch": "Ik oefen \"manier\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verschillende",
-    "english": "various"
+    "english": "various",
+    "exampleDutch": "Ik oefen \"verschillende\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "bladzijde/pagina",
-    "english": "page"
+    "english": "page",
+    "exampleDutch": "Ik oefen \"bladzijde/pagina\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "opnieuw",
-    "english": "again and again"
+    "english": "again and again",
+    "exampleDutch": "Ik oefen \"opnieuw\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "onthouden",
-    "english": "remember"
+    "english": "remember",
+    "exampleDutch": "Ik oefen \"onthouden\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "uitzoeken",
-    "english": "find out"
+    "english": "find out",
+    "exampleDutch": "Ik oefen \"uitzoeken\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "omgeving",
-    "english": "environment"
+    "english": "environment",
+    "exampleDutch": "Ik oefen \"omgeving\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "tekst",
-    "english": "tekst"
+    "english": "tekst",
+    "exampleDutch": "Ik oefen \"tekst\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "het eerste",
-    "english": "first"
+    "english": "first",
+    "exampleDutch": "Ik oefen \"het eerste\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "een beetje",
-    "english": "little bit"
+    "english": "little bit",
+    "exampleDutch": "Ik oefen \"een beetje\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "neem",
-    "english": "take"
+    "english": "take",
+    "exampleDutch": "Ik oefen \"neem\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "dorpsbewoner",
-    "english": "residents village"
+    "english": "residents village",
+    "exampleDutch": "Ik oefen \"dorpsbewoner\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "rondom",
-    "english": "around"
+    "english": "around",
+    "exampleDutch": "Ik oefen \"rondom\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "oproepen",
-    "english": "a call"
+    "english": "a call",
+    "exampleDutch": "Ik oefen \"oproepen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "jaarlijkse",
-    "english": "yearly"
+    "english": "yearly",
+    "exampleDutch": "Ik oefen \"jaarlijkse\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "weghalen",
-    "english": "remove"
+    "english": "remove",
+    "exampleDutch": "Ik oefen \"weghalen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "wegslepen",
-    "english": "tow away"
+    "english": "tow away",
+    "exampleDutch": "Ik oefen \"wegslepen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "gekocht/kopen",
-    "english": "paste tense buy"
+    "english": "paste tense buy",
+    "exampleDutch": "Ik oefen \"gekocht/kopen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "betalen",
-    "english": "pay"
+    "english": "pay",
+    "exampleDutch": "Ik oefen \"betalen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bezorging",
-    "english": "delivery"
+    "english": "delivery",
+    "exampleDutch": "Ik oefen \"bezorging\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "levertijd",
-    "english": "deliverytime"
+    "english": "deliverytime",
+    "exampleDutch": "Ik oefen \"levertijd\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "klantenservice",
-    "english": "customerservice"
+    "english": "customerservice",
+    "exampleDutch": "Ik oefen \"klantenservice\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "zwemkleding",
-    "english": "swimming costume"
+    "english": "swimming costume",
+    "exampleDutch": "Ik oefen \"zwemkleding\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "handdoek",
-    "english": "towel"
+    "english": "towel",
+    "exampleDutch": "Ik oefen \"handdoek\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "extre/meer",
-    "english": "more"
+    "english": "more",
+    "exampleDutch": "Ik oefen \"extre/meer\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "aanraden/adviseren",
-    "english": "advise"
+    "english": "advise",
+    "exampleDutch": "Ik oefen \"aanraden/adviseren\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "meemogen",
-    "english": "may join"
+    "english": "may join",
+    "exampleDutch": "Ik oefen \"meemogen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "portier",
-    "english": "porter"
+    "english": "porter",
+    "exampleDutch": "Ik oefen \"portier\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bureau",
-    "english": "desk"
+    "english": "desk",
+    "exampleDutch": "Ik oefen \"bureau\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "trein",
-    "english": "train"
+    "english": "train",
+    "exampleDutch": "Ik oefen \"trein\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "merken",
-    "english": "notice"
+    "english": "notice",
+    "exampleDutch": "Ik oefen \"merken\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "ophalen",
-    "english": "pick up"
+    "english": "pick up",
+    "exampleDutch": "Ik oefen \"ophalen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "rits",
-    "english": "zipper"
+    "english": "zipper",
+    "exampleDutch": "Ik oefen \"rits\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "rugtas",
-    "english": "backpack"
+    "english": "backpack",
+    "exampleDutch": "Ik oefen \"rugtas\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bril",
-    "english": "glasses"
+    "english": "glasses",
+    "exampleDutch": "Ik oefen \"bril\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "portemonnee",
-    "english": "wallet"
+    "english": "wallet",
+    "exampleDutch": "Ik oefen \"portemonnee\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "boek",
-    "english": "book"
+    "english": "book",
+    "exampleDutch": "Ik oefen \"boek\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "lunch",
-    "english": "lunch"
+    "english": "lunch",
+    "exampleDutch": "Ik oefen \"lunch\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "sportkleding",
-    "english": "sportcloth"
+    "english": "sportcloth",
+    "exampleDutch": "Ik oefen \"sportkleding\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "meemenen",
-    "english": "take along"
+    "english": "take along",
+    "exampleDutch": "Ik oefen \"meemenen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "brood",
-    "english": "bread"
+    "english": "bread",
+    "exampleDutch": "Ik oefen \"brood\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "zelf",
-    "english": "yourself"
+    "english": "yourself",
+    "exampleDutch": "Ik oefen \"zelf\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "meedoen",
-    "english": "participate"
+    "english": "participate",
+    "exampleDutch": "Ik oefen \"meedoen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bruiloft",
-    "english": "wedding"
+    "english": "wedding",
+    "exampleDutch": "Ik oefen \"bruiloft\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "opgeven",
-    "english": "register"
+    "english": "register",
+    "exampleDutch": "Ik oefen \"opgeven\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx",
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "cadeaubon",
-    "english": "giftcard"
+    "english": "giftcard",
+    "exampleDutch": "Ik oefen \"cadeaubon\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "kiezen",
-    "english": "choose/select"
+    "english": "choose/select",
+    "exampleDutch": "Ik oefen \"kiezen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "gekozen/kiezen",
-    "english": "paste tense choose"
+    "english": "paste tense choose",
+    "exampleDutch": "Ik oefen \"gekozen/kiezen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "cadeau",
-    "english": "gift/present"
+    "english": "gift/present",
+    "exampleDutch": "Ik oefen \"cadeau\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "meest",
-    "english": "most"
+    "english": "most",
+    "exampleDutch": "Ik oefen \"meest\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verrassing",
-    "english": "suprise"
+    "english": "suprise",
+    "exampleDutch": "Ik oefen \"verrassing\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "feestcommissie",
-    "english": "party committe"
+    "english": "party committe",
+    "exampleDutch": "Ik oefen \"feestcommissie\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "taak",
-    "english": "task"
+    "english": "task",
+    "exampleDutch": "Ik oefen \"taak\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "geregeld",
-    "english": "arranged"
+    "english": "arranged",
+    "exampleDutch": "Ik oefen \"geregeld\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "EHBO",
-    "english": "Eerste hulp bij ongelukken"
+    "english": "Eerste hulp bij ongelukken",
+    "exampleDutch": "Ik oefen \"EHBO\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "basisschool/lagere school",
-    "english": "primary school"
+    "english": "primary school",
+    "exampleDutch": "Ik oefen \"basisschool/lagere school\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "meest geschikt",
-    "english": "most appropriate"
+    "english": "most appropriate",
+    "exampleDutch": "Ik oefen \"meest geschikt\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "ouders",
-    "english": "parents"
+    "english": "parents",
+    "exampleDutch": "Ik oefen \"ouders\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verzorgers",
-    "english": "caretakers"
+    "english": "caretakers",
+    "exampleDutch": "Ik oefen \"verzorgers\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "reanimeren",
-    "english": "reanimate"
+    "english": "reanimate",
+    "exampleDutch": "Ik oefen \"reanimeren\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bijeenkomsten",
-    "english": "meetings"
+    "english": "meetings",
+    "exampleDutch": "Ik oefen \"bijeenkomsten\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "hoeveel",
-    "english": "how many"
+    "english": "how many",
+    "exampleDutch": "Ik oefen \"hoeveel\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "bestaat uit",
-    "english": "consists of"
+    "english": "consists of",
+    "exampleDutch": "Ik oefen \"bestaat uit\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "zoveel mogelijk",
-    "english": "as much as possible"
+    "english": "as much as possible",
+    "exampleDutch": "Ik oefen \"zoveel mogelijk\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "weggooien",
-    "english": "throw away"
+    "english": "throw away",
+    "exampleDutch": "Ik oefen \"weggooien\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "repareren",
-    "english": "repair"
+    "english": "repair",
+    "exampleDutch": "Ik oefen \"repareren\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "maken",
-    "english": "make"
+    "english": "make",
+    "exampleDutch": "Ik oefen \"maken\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "terugbrengen",
-    "english": "bring back"
+    "english": "bring back",
+    "exampleDutch": "Ik oefen \"terugbrengen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "eigenaar",
-    "english": "owner"
+    "english": "owner",
+    "exampleDutch": "Ik oefen \"eigenaar\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "gebruikte spullen",
-    "english": "used stiff"
+    "english": "used stiff",
+    "exampleDutch": "Ik oefen \"gebruikte spullen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "regelmatig",
-    "english": "regular"
+    "english": "regular",
+    "exampleDutch": "Ik oefen \"regelmatig\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "spullen/dingen",
-    "english": "stuff"
+    "english": "stuff",
+    "exampleDutch": "Ik oefen \"spullen/dingen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "kapot/stuk",
-    "english": "broken"
+    "english": "broken",
+    "exampleDutch": "Ik oefen \"kapot/stuk\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "controleren",
-    "english": "check"
+    "english": "check",
+    "exampleDutch": "Ik oefen \"controleren\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "proberen",
-    "english": "try"
+    "english": "try",
+    "exampleDutch": "Ik oefen \"proberen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verkopen",
-    "english": "sell"
+    "english": "sell",
+    "exampleDutch": "Ik oefen \"verkopen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "niets",
-    "english": "nothing"
+    "english": "nothing",
+    "exampleDutch": "Ik oefen \"niets\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "goede doelen",
-    "english": "charity"
+    "english": "charity",
+    "exampleDutch": "Ik oefen \"goede doelen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "medewerkers",
-    "english": "employees"
+    "english": "employees",
+    "exampleDutch": "Ik oefen \"medewerkers\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "naartoe",
-    "english": "to"
+    "english": "to",
+    "exampleDutch": "Ik oefen \"naartoe\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "kinderboerderij",
-    "english": "childrens farm"
+    "english": "childrens farm",
+    "exampleDutch": "Ik oefen \"kinderboerderij\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "vrijwilligers",
-    "english": "volunteers"
+    "english": "volunteers",
+    "exampleDutch": "Ik oefen \"vrijwilligers\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "verdienen",
-    "english": "earn"
+    "english": "earn",
+    "exampleDutch": "Ik oefen \"verdienen\".",
+    "sourceFile": "excelwoordlijst1.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst1.xlsx"
+    ]
   },
   {
     "dutch": "kiespijn",
-    "english": "toothache"
+    "english": "toothache",
+    "exampleDutch": "Ik oefen \"kiespijn\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "zo snel mogelijk",
-    "english": "as soon as possible"
+    "english": "as soon as possible",
+    "exampleDutch": "Ik oefen \"zo snel mogelijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "receptie",
-    "english": "reception"
+    "english": "reception",
+    "exampleDutch": "Ik oefen \"receptie\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "nood nummer",
-    "english": "emergency number"
+    "english": "emergency number",
+    "exampleDutch": "Ik oefen \"nood nummer\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "praktijk",
-    "english": "practice"
+    "english": "practice",
+    "exampleDutch": "Ik oefen \"praktijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "Kindertandarts",
-    "english": "child dentist"
+    "english": "child dentist",
+    "exampleDutch": "Ik oefen \"Kindertandarts\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "geopend",
-    "english": "open"
+    "english": "open",
+    "exampleDutch": "Ik oefen \"geopend\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "gesloten",
-    "english": "closed"
+    "english": "closed",
+    "exampleDutch": "Ik oefen \"gesloten\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "spoed",
-    "english": "emergency"
+    "english": "emergency",
+    "exampleDutch": "Ik oefen \"spoed\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "cv",
-    "english": "resume"
+    "english": "resume",
+    "exampleDutch": "Ik oefen \"cv\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "vacature",
-    "english": "vacancy"
+    "english": "vacancy",
+    "exampleDutch": "Ik oefen \"vacature\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "een baan",
-    "english": "job"
+    "english": "job",
+    "exampleDutch": "Ik oefen \"een baan\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "buurthuis",
-    "english": "community center"
+    "english": "community center",
+    "exampleDutch": "Ik oefen \"buurthuis\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "werkervaring",
-    "english": "workexperience"
+    "english": "workexperience",
+    "exampleDutch": "Ik oefen \"werkervaring\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "persoonlijke gegevens",
-    "english": "personal details"
+    "english": "personal details",
+    "exampleDutch": "Ik oefen \"persoonlijke gegevens\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "overig",
-    "english": "additional"
+    "english": "additional",
+    "exampleDutch": "Ik oefen \"overig\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "vrijwillig",
-    "english": "volunteerly"
+    "english": "volunteerly",
+    "exampleDutch": "Ik oefen \"vrijwillig\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "zetten",
-    "english": "put"
+    "english": "put",
+    "exampleDutch": "Ik oefen \"zetten\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "rijbewijs",
-    "english": "drivers license"
+    "english": "drivers license",
+    "exampleDutch": "Ik oefen \"rijbewijs\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "scooter",
-    "english": "scooter"
+    "english": "scooter",
+    "exampleDutch": "Ik oefen \"scooter\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "buitenland",
-    "english": "abroad"
+    "english": "abroad",
+    "exampleDutch": "Ik oefen \"buitenland\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "schriftelijk",
-    "english": "written"
+    "english": "written",
+    "exampleDutch": "Ik oefen \"schriftelijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "buiten",
-    "english": "outside"
+    "english": "outside",
+    "exampleDutch": "Ik oefen \"buiten\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "uiterlijk",
-    "english": "at the latetst"
+    "english": "at the latetst",
+    "exampleDutch": "Ik oefen \"uiterlijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "open dag",
-    "english": "open day"
+    "english": "open day",
+    "exampleDutch": "Ik oefen \"open dag\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "kunnen",
-    "english": "can"
+    "english": "can",
+    "exampleDutch": "Ik oefen \"kunnen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "helpen",
-    "english": "help"
+    "english": "help",
+    "exampleDutch": "Ik oefen \"helpen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "openingstijden",
-    "english": "openingtimes"
+    "english": "openingtimes",
+    "exampleDutch": "Ik oefen \"openingstijden\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "ziek melden",
-    "english": "report ill"
+    "english": "report ill",
+    "exampleDutch": "Ik oefen \"ziek melden\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "leidinggevende",
-    "english": "leader"
+    "english": "leader",
+    "exampleDutch": "Ik oefen \"leidinggevende\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "secretariaat",
-    "english": "secretary"
+    "english": "secretary",
+    "exampleDutch": "Ik oefen \"secretariaat\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "bereiken",
-    "english": "reach"
+    "english": "reach",
+    "exampleDutch": "Ik oefen \"bereiken\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "bereikbaar",
-    "english": "reacheable"
+    "english": "reacheable",
+    "exampleDutch": "Ik oefen \"bereikbaar\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "bedrijfsarts",
-    "english": "company doctor"
+    "english": "company doctor",
+    "exampleDutch": "Ik oefen \"bedrijfsarts\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "altijd",
-    "english": "always"
+    "english": "always",
+    "exampleDutch": "Ik oefen \"altijd\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "op elk moment",
-    "english": "any moment"
+    "english": "any moment",
+    "exampleDutch": "Ik oefen \"op elk moment\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "uitnodiging",
-    "english": "invitation"
+    "english": "invitation",
+    "exampleDutch": "Ik oefen \"uitnodiging\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "buurtbijeenkomst",
-    "english": "community meeting"
+    "english": "community meeting",
+    "exampleDutch": "Ik oefen \"buurtbijeenkomst\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "veranderingen",
-    "english": "changes"
+    "english": "changes",
+    "exampleDutch": "Ik oefen \"veranderingen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "ontvangst",
-    "english": "to welcome"
+    "english": "to welcome",
+    "exampleDutch": "Ik oefen \"ontvangst\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "muzikaal",
-    "english": "musical"
+    "english": "musical",
+    "exampleDutch": "Ik oefen \"muzikaal\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "optreden",
-    "english": "performance"
+    "english": "performance",
+    "exampleDutch": "Ik oefen \"optreden\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "thema",
-    "english": "theme"
+    "english": "theme",
+    "exampleDutch": "Ik oefen \"thema\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "hapjes",
-    "english": "bites"
+    "english": "bites",
+    "exampleDutch": "Ik oefen \"hapjes\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "drankjes",
-    "english": "drinks"
+    "english": "drinks",
+    "exampleDutch": "Ik oefen \"drankjes\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "muziek",
-    "english": "music"
+    "english": "music",
+    "exampleDutch": "Ik oefen \"muziek\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "activiteiten",
-    "english": "activities"
+    "english": "activities",
+    "exampleDutch": "Ik oefen \"activiteiten\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "abonnement",
-    "english": "subscription"
+    "english": "subscription",
+    "exampleDutch": "Ik oefen \"abonnement\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "basis",
-    "english": "base"
+    "english": "base",
+    "exampleDutch": "Ik oefen \"basis\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "werkdagen",
-    "english": "workdays"
+    "english": "workdays",
+    "exampleDutch": "Ik oefen \"werkdagen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "weekend",
-    "english": "weekend"
+    "english": "weekend",
+    "exampleDutch": "Ik oefen \"weekend\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "bedanken",
-    "english": "thank you"
+    "english": "thank you",
+    "exampleDutch": "Ik oefen \"bedanken\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "gebruiken",
-    "english": "use"
+    "english": "use",
+    "exampleDutch": "Ik oefen \"gebruiken\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "durven",
-    "english": "dare"
+    "english": "dare",
+    "exampleDutch": "Ik oefen \"durven\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "beter",
-    "english": "better"
+    "english": "better",
+    "exampleDutch": "Ik oefen \"beter\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "nooit",
-    "english": "never"
+    "english": "never",
+    "exampleDutch": "Ik oefen \"nooit\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "moeilijk",
-    "english": "difficult"
+    "english": "difficult",
+    "exampleDutch": "Ik oefen \"moeilijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "makkelijk",
-    "english": "easy"
+    "english": "easy",
+    "exampleDutch": "Ik oefen \"makkelijk\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "fouten",
-    "english": "mistakes"
+    "english": "mistakes",
+    "exampleDutch": "Ik oefen \"fouten\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "geholpen/helpen",
-    "english": "help"
+    "english": "help",
+    "exampleDutch": "Ik oefen \"geholpen/helpen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "zonder",
-    "english": "without"
+    "english": "without",
+    "exampleDutch": "Ik oefen \"zonder\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "anderen",
-    "english": "others"
+    "english": "others",
+    "exampleDutch": "Ik oefen \"anderen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "taal",
-    "english": "language"
+    "english": "language",
+    "exampleDutch": "Ik oefen \"taal\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "echt",
-    "english": "for real"
+    "english": "for real",
+    "exampleDutch": "Ik oefen \"echt\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "het is jammer",
-    "english": "Its a pity"
+    "english": "Its a pity",
+    "exampleDutch": "Ik oefen \"het is jammer\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "te lang",
-    "english": "too long"
+    "english": "too long",
+    "exampleDutch": "Ik oefen \"te lang\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "te weinig",
-    "english": "not enough"
+    "english": "not enough",
+    "exampleDutch": "Ik oefen \"te weinig\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "afgemaakt",
-    "english": "finished"
+    "english": "finished",
+    "exampleDutch": "Ik oefen \"afgemaakt\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "geslaagd",
-    "english": "passed exam"
+    "english": "passed exam",
+    "exampleDutch": "Ik oefen \"geslaagd\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "weinig",
-    "english": "not a lot"
+    "english": "not a lot",
+    "exampleDutch": "Ik oefen \"weinig\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "telefonisch spreekuur",
-    "english": "telephone call"
+    "english": "telephone call",
+    "exampleDutch": "Ik oefen \"telefonisch spreekuur\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "schuiven",
-    "english": "slide"
+    "english": "slide",
+    "exampleDutch": "Ik oefen \"schuiven\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "volgorde",
-    "english": "sequence"
+    "english": "sequence",
+    "exampleDutch": "Ik oefen \"volgorde\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "boven",
-    "english": "up"
+    "english": "up",
+    "exampleDutch": "Ik oefen \"boven\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "beneden",
-    "english": "down"
+    "english": "down",
+    "exampleDutch": "Ik oefen \"beneden\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "door elkaar",
-    "english": "through eachother"
+    "english": "through eachother",
+    "exampleDutch": "Ik oefen \"door elkaar\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "niet alleen",
-    "english": "not only"
+    "english": "not only",
+    "exampleDutch": "Ik oefen \"niet alleen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "moeite",
-    "english": "trouble"
+    "english": "trouble",
+    "exampleDutch": "Ik oefen \"moeite\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "hoe lang",
-    "english": "how long"
+    "english": "how long",
+    "exampleDutch": "Ik oefen \"hoe lang\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "ruilen",
-    "english": "swap/exchange"
+    "english": "swap/exchange",
+    "exampleDutch": "Ik oefen \"ruilen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "eerste",
-    "english": "first"
+    "english": "first",
+    "exampleDutch": "Ik oefen \"eerste\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "klantenkaart",
-    "english": "customercard"
+    "english": "customercard",
+    "exampleDutch": "Ik oefen \"klantenkaart\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "dweilen",
-    "english": "mop the floor"
+    "english": "mop the floor",
+    "exampleDutch": "Ik oefen \"dweilen\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "deden",
-    "english": "past tense of doen"
+    "english": "past tense of doen",
+    "exampleDutch": "Ik oefen \"deden\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "1 keer",
-    "english": "one time"
+    "english": "one time",
+    "exampleDutch": "Ik oefen \"1 keer\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "vies",
-    "english": "dirty"
+    "english": "dirty",
+    "exampleDutch": "Ik oefen \"vies\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   },
   {
     "dutch": "derde",
-    "english": "third"
+    "english": "third",
+    "exampleDutch": "Ik oefen \"derde\".",
+    "sourceFile": "excelwoordlijst2.xlsx",
+    "sourceFiles": [
+      "excelwoordlijst2.xlsx"
+    ]
   }
 ]
