@@ -1,0 +1,13 @@
+{
+  "totalWords": 387,
+  "overridesBeforeRaw": 387,
+  "overridesAfterMigration": 387,
+  "movedOverrideKeys": 0,
+  "missingBeforeGeneration": 0,
+  "generatedThisRun": 0,
+  "reviewFixesThisRun": 0,
+  "reviewAllFixes": 193,
+  "remainingMissing": 0,
+  "batchesRun": 0,
+  "batchReports": []
+}
