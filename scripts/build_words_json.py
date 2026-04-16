@@ -78,14 +78,196 @@ def cell_text(cell: ET.Element, shared_strings: list[str]) -> str:
     return ""
 
 
-def build_concise_example_sentence(dutch_word: str) -> str:
-    """
-    Build a short Dutch example sentence for one vocabulary item.
+def normalize_pair_key(dutch_word: str, english_word: str) -> str:
+    """Create a stable key for one Dutch-English pair."""
+    return f"{dutch_word.strip().lower()}|||{english_word.strip().lower()}"
 
-    This keeps generation deterministic and lightweight for large word lists.
+
+def pick_primary_term(dutch_word: str) -> str:
     """
-    clean_word = dutch_word.strip()
-    return f'Ik oefen "{clean_word}".'
+    Pick the first variant when a word includes slash-separated variants.
+
+    Example:
+    - "plek/plaats" -> "plek"
+    """
+    clean = dutch_word.strip()
+    if "/" in clean:
+        first_part = clean.split("/", 1)[0].strip()
+        if first_part:
+            return first_part
+    return clean
+
+
+def looks_like_adjective(dutch_word: str, english_word: str) -> bool:
+    """Best-effort adjective detection for short context sentence templates."""
+    dutch = dutch_word.lower().strip()
+    english = english_word.lower().strip()
+
+    dutch_suffixes = ("ig", "lijk", "baar", "zaam", "loos", "isch", "vrij")
+    known_english_adjectives = {
+        "special",
+        "cozy",
+        "free",
+        "busy",
+        "clean",
+        "friendly",
+        "happy",
+        "quiet",
+        "new",
+        "important",
+        "enough",
+        "different",
+        "simple",
+        "calm",
+        "difficult",
+        "easy",
+        "closed",
+        "open",
+        "available",
+        "normal",
+    }
+
+    if dutch.endswith(dutch_suffixes):
+        return True
+    return english in known_english_adjectives
+
+
+def looks_like_time_or_adverb_phrase(dutch_word: str) -> bool:
+    """Detect common time/adverb expressions for a better sentence frame."""
+    text = dutch_word.lower().strip()
+    markers = (
+        "vandaag",
+        "gisteren",
+        "morgen",
+        "straks",
+        "week",
+        "maand",
+        "jaar",
+        "altijd",
+        "nooit",
+        "eerder",
+        "later",
+        "vaker",
+        "doordeweeks",
+        "weekend",
+        "op tijd",
+        "zo snel mogelijk",
+    )
+    return any(marker in text for marker in markers)
+
+
+def looks_like_verb(dutch_word: str, english_word: str) -> bool:
+    """
+    Best-effort verb detection.
+
+    Priority:
+    - English starts with "to "
+    - Dutch infinitive-like single word ending in "en"
+    """
+    english = english_word.lower().strip()
+    dutch = dutch_word.lower().strip()
+
+    if english.startswith("to "):
+        return True
+
+    if " " not in dutch and dutch.endswith("en") and len(dutch) > 3:
+        return True
+
+    return False
+
+
+def build_context_example_sentence(dutch_word: str, english_word: str) -> str:
+    """
+    Build a short Dutch context sentence for one vocabulary item.
+
+    This remains deterministic, concise, and safer than fully free-form generation.
+    """
+    term = pick_primary_term(dutch_word)
+
+    if looks_like_time_or_adverb_phrase(term):
+        return f"Ik doe dat {term}."
+
+    if looks_like_verb(term, english_word):
+        return f"Ik wil {term}."
+
+    if looks_like_adjective(term, english_word):
+        return f"Dat is {term}."
+
+    return f"We praten over {term}."
+
+
+def load_example_overrides(path: Path) -> dict[str, str]:
+    """
+    Load manual example sentence overrides keyed by:
+    "dutch|||english" (both lowercased).
+    """
+    if not path.exists():
+        return {}
+
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(raw, dict):
+            return {}
+    except Exception:
+        return {}
+
+    overrides: dict[str, str] = {}
+    for key, value in raw.items():
+        if not isinstance(key, str) or not isinstance(value, str):
+            continue
+        clean_value = value.strip()
+        if not clean_value:
+            continue
+        overrides[key.strip().lower()] = clean_value
+
+    return overrides
+
+
+def load_typo_corrections(path: Path) -> dict[str, dict[str, str]]:
+    """
+    Load typo corrections keyed by:
+    "dutch|||english" (both lowercased).
+
+    Value format:
+    {
+      "dutch": "...",
+      "english": "..."
+    }
+    """
+    if not path.exists():
+        return {}
+
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(raw, dict):
+            return {}
+    except Exception:
+        return {}
+
+    corrections: dict[str, dict[str, str]] = {}
+
+    for key, value in raw.items():
+        if not isinstance(key, str) or not isinstance(value, dict):
+            continue
+
+        corrected_dutch = value.get("dutch")
+        corrected_english = value.get("english")
+
+        if not isinstance(corrected_dutch, str) or not isinstance(corrected_english, str):
+            continue
+
+        corrected_dutch = corrected_dutch.strip()
+        corrected_english = corrected_english.strip()
+
+        if not corrected_dutch or not corrected_english:
+            continue
+
+        corrections[key.strip().lower()] = {
+            "dutch": corrected_dutch,
+            "english": corrected_english,
+        }
+
+    return corrections
 
 
 def extract_pairs_from_xlsx(xlsx_path: Path) -> list[dict[str, str]]:
@@ -128,8 +310,6 @@ def extract_pairs_from_xlsx(xlsx_path: Path) -> list[dict[str, str]]:
             {
                 "dutch": dutch,
                 "english": english,
-                # Keep examples concise.
-                "exampleDutch": build_concise_example_sentence(dutch),
                 # Keep the first source file name for quick display/filtering.
                 "sourceFile": source_name,
                 # Keep full source list in case the same pair appears in many files.
@@ -155,10 +335,28 @@ def main() -> None:
         default=["data/words.json"],
         help="Output JSON path. Can be used multiple times.",
     )
+    parser.add_argument(
+        "--examples-overrides",
+        default="data/examples_overrides.json",
+        help=(
+            "Optional JSON file with manual example overrides keyed by "
+            "'dutch|||english' (default: data/examples_overrides.json)"
+        ),
+    )
+    parser.add_argument(
+        "--typo-corrections",
+        default="data/typo_corrections.json",
+        help=(
+            "Optional JSON file with typo corrections keyed by "
+            "'dutch|||english' (default: data/typo_corrections.json)"
+        ),
+    )
     args = parser.parse_args()
 
     source_dir = Path(args.source_dir)
     excel_files = sorted(source_dir.glob("*.xlsx"))
+    example_overrides = load_example_overrides(Path(args.examples_overrides))
+    typo_corrections = load_typo_corrections(Path(args.typo_corrections))
 
     if not excel_files:
         raise SystemExit(f"No .xlsx files found in {source_dir}")
@@ -168,10 +366,31 @@ def main() -> None:
 
     for xlsx_file in excel_files:
         for pair in extract_pairs_from_xlsx(xlsx_file):
+            original_dutch = pair["dutch"]
+            original_english = pair["english"]
+            original_key = normalize_pair_key(original_dutch, original_english)
+
+            # Apply typo correction before dedupe and before example merge.
+            correction = typo_corrections.get(original_key)
+            if correction:
+                pair["dutch"] = correction["dutch"]
+                pair["english"] = correction["english"]
+
             key = (pair["dutch"].lower(), pair["english"].lower())
             existing_index = key_to_index.get(key)
 
             if existing_index is None:
+                corrected_key = normalize_pair_key(pair["dutch"], pair["english"])
+                if corrected_key in example_overrides:
+                    pair["exampleDutch"] = example_overrides[corrected_key]
+                elif original_key in example_overrides:
+                    # Backward compatibility: preserve old overrides while typos are being corrected.
+                    pair["exampleDutch"] = example_overrides[original_key]
+                else:
+                    pair["exampleDutch"] = build_context_example_sentence(
+                        pair["dutch"], pair["english"]
+                    )
+
                 key_to_index[key] = len(all_pairs)
                 all_pairs.append(pair)
                 continue
