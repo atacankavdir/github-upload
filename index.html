@@ -193,6 +193,66 @@
       gap: 10px;
     }
 
+    .source-filter {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto 14px;
+      text-align: left;
+    }
+
+    .source-filter-title {
+      margin: 0 0 6px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .source-filter-dropdown {
+      border: 1px solid var(--btn-border);
+      border-radius: 12px;
+      background: var(--btn-bg);
+      color: var(--text-main);
+      padding: 8px 10px;
+    }
+
+    .source-filter-dropdown > summary {
+      list-style: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    .source-filter-dropdown > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .source-filter-options {
+      margin-top: 10px;
+      max-height: 190px;
+      overflow-y: auto;
+      border-top: 1px solid var(--btn-border);
+      padding-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .source-filter-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.94rem;
+      color: var(--text-main);
+    }
+
+    .source-filter-option input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
     .mode-btn.is-active {
       border-color: var(--accent);
       box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent);
@@ -410,6 +470,16 @@
     <h1>Dutch Flashcards</h1>
     <p class="hint">Tap or click the card to flip it.</p>
 
+    <!-- ADDED (Source filter):
+         Multi-select source filter with "All" option at the top. -->
+    <div class="source-filter">
+      <p class="source-filter-title">Source Filter</p>
+      <details id="sourceFilterDropdown" class="source-filter-dropdown">
+        <summary id="sourceFilterSummary">All sources</summary>
+        <div id="sourceFilterOptions" class="source-filter-options"></div>
+      </details>
+    </div>
+
     <!-- ADDED (Quiz mode):
          Simple mode switch between flashcards and quiz. -->
     <div class="mode-switch">
@@ -506,21 +576,24 @@
     // ADDED (Example sentences):
     // Each word now includes exampleDutch for optional sentence practice.
     const fallbackWords = [
-      { id: 1, dutch: "huis", english: "house", count: 0, exampleDutch: "Ik ga naar huis." },
-      { id: 2, dutch: "boek", english: "book", count: 0, exampleDutch: "Ik lees een boek." },
-      { id: 3, dutch: "water", english: "water", count: 0, exampleDutch: "Ik drink water." },
-      { id: 4, dutch: "fiets", english: "bicycle", count: 0, exampleDutch: "Mijn fiets is nieuw." },
-      { id: 5, dutch: "appel", english: "apple", count: 0, exampleDutch: "Ik eet een appel." }
+      { id: 1, dutch: "huis", english: "house", count: 0, exampleDutch: "Ik ga naar huis.", sourceFile: "fallback", sourceFiles: ["fallback"] },
+      { id: 2, dutch: "boek", english: "book", count: 0, exampleDutch: "Ik lees een boek.", sourceFile: "fallback", sourceFiles: ["fallback"] },
+      { id: 3, dutch: "water", english: "water", count: 0, exampleDutch: "Ik drink water.", sourceFile: "fallback", sourceFiles: ["fallback"] },
+      { id: 4, dutch: "fiets", english: "bicycle", count: 0, exampleDutch: "Mijn fiets is nieuw.", sourceFile: "fallback", sourceFiles: ["fallback"] },
+      { id: 5, dutch: "appel", english: "apple", count: 0, exampleDutch: "Ik eet een appel.", sourceFile: "fallback", sourceFiles: ["fallback"] }
     ];
 
     // ---------------------------------------------
     // State
     // ---------------------------------------------
     let baseWords = [];
+    let defaultWords = [];
     let words = [];
     let currentWordIndex = 0;
     let shownHistoryIds = [];
     let recentWordIds = [];
+    const ALL_SOURCE_VALUE = "__all_sources__";
+    let selectedSources = new Set([ALL_SOURCE_VALUE]);
     // ADDED (Example sentences):
     // Example sentence is hidden by default for each word.
     let isExampleVisible = false;
@@ -543,6 +616,8 @@
     const dutchWord = document.getElementById("dutchWord");
     const englishWord = document.getElementById("englishWord");
     const cardIndex = document.getElementById("cardIndex");
+    const sourceFilterSummary = document.getElementById("sourceFilterSummary");
+    const sourceFilterOptions = document.getElementById("sourceFilterOptions");
     const flashcardModeBtn = document.getElementById("flashcardModeBtn");
     const quizModeBtn = document.getElementById("quizModeBtn");
     const quizPanel = document.getElementById("quizPanel");
@@ -575,7 +650,11 @@
           dutch: word.dutch,
           english: word.english,
           count: word.count,
-          exampleDutch: word.exampleDutch || ""
+          exampleDutch: word.exampleDutch || "",
+          sourceFile: word.sourceFile || "unknown",
+          sourceFiles: Array.isArray(word.sourceFiles) && word.sourceFiles.length > 0
+            ? [...word.sourceFiles]
+            : [word.sourceFile || "unknown"]
         };
       });
     }
@@ -588,6 +667,165 @@
     // If a word has no explicit example, create a simple Dutch sentence.
     function buildDefaultExampleSentence(dutchWord) {
       return `Ik oefen het woord "${dutchWord}".`;
+    }
+
+    // ---------------------------------------------
+    // Source filter helpers
+    // ---------------------------------------------
+    function normalizeSourceFields(item) {
+      const sourcesFromArray = Array.isArray(item.sourceFiles)
+        ? item.sourceFiles
+            .filter(function (sourceName) {
+              return typeof sourceName === "string";
+            })
+            .map(function (sourceName) {
+              return sourceName.trim();
+            })
+            .filter(Boolean)
+        : [];
+
+      const primarySource =
+        typeof item.sourceFile === "string" ? item.sourceFile.trim() : "";
+
+      const combined = sourcesFromArray.slice();
+      if (primarySource) combined.unshift(primarySource);
+
+      const uniqueSources = Array.from(new Set(combined)).filter(Boolean);
+      const safeSources = uniqueSources.length > 0 ? uniqueSources : ["unknown"];
+
+      return {
+        sourceFile: safeSources[0],
+        sourceFiles: safeSources
+      };
+    }
+
+    function getSortedSourceList() {
+      const sourceSet = new Set();
+
+      baseWords.forEach(function (word) {
+        word.sourceFiles.forEach(function (sourceName) {
+          sourceSet.add(sourceName);
+        });
+      });
+
+      return Array.from(sourceSet).sort(function (a, b) {
+        return a.localeCompare(b);
+      });
+    }
+
+    function updateSourceFilterSummary() {
+      if (selectedSources.has(ALL_SOURCE_VALUE)) {
+        sourceFilterSummary.textContent = "All sources";
+        return;
+      }
+
+      const selectedList = Array.from(selectedSources);
+
+      if (selectedList.length === 1) {
+        sourceFilterSummary.textContent = selectedList[0];
+        return;
+      }
+
+      sourceFilterSummary.textContent = `${selectedList.length} sources selected`;
+    }
+
+    function syncSourceFilterCheckboxes() {
+      const checkboxes = sourceFilterOptions.querySelectorAll('input[type="checkbox"][name="sourceFilter"]');
+
+      checkboxes.forEach(function (checkbox) {
+        if (checkbox.value === ALL_SOURCE_VALUE) {
+          checkbox.checked = selectedSources.has(ALL_SOURCE_VALUE);
+        } else {
+          checkbox.checked =
+            !selectedSources.has(ALL_SOURCE_VALUE) &&
+            selectedSources.has(checkbox.value);
+        }
+      });
+    }
+
+    function renderSourceFilterOptions() {
+      const sourceNames = getSortedSourceList();
+      sourceFilterOptions.innerHTML = "";
+
+      function appendOption(value, labelText) {
+        const label = document.createElement("label");
+        label.className = "source-filter-option";
+
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.name = "sourceFilter";
+        input.value = value;
+
+        const text = document.createElement("span");
+        text.textContent = labelText;
+
+        label.appendChild(input);
+        label.appendChild(text);
+        sourceFilterOptions.appendChild(label);
+      }
+
+      // Keep "All" at the top.
+      appendOption(ALL_SOURCE_VALUE, "All");
+      sourceNames.forEach(function (sourceName) {
+        appendOption(sourceName, sourceName);
+      });
+
+      syncSourceFilterCheckboxes();
+      updateSourceFilterSummary();
+    }
+
+    function wordMatchesSourceFilter(word) {
+      if (selectedSources.has(ALL_SOURCE_VALUE)) return true;
+
+      return word.sourceFiles.some(function (sourceName) {
+        return selectedSources.has(sourceName);
+      });
+    }
+
+    function applySourceFilter() {
+      words = baseWords.filter(wordMatchesSourceFilter);
+
+      // When the source filter changes, restart the active run from first card.
+      resetSessionTracking();
+      resetQuizSessionStats();
+      resetQuizQuestionState();
+      isExampleVisible = false;
+
+      if (words.length === 0) {
+        currentWordIndex = 0;
+        renderCurrentView();
+        return;
+      }
+
+      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
+    }
+
+    function handleSourceFilterChange(event) {
+      const target = event.target;
+      if (!(target instanceof HTMLInputElement)) return;
+      if (target.name !== "sourceFilter") return;
+
+      if (target.value === ALL_SOURCE_VALUE) {
+        // Selecting "All" clears individual source selections.
+        selectedSources = new Set([ALL_SOURCE_VALUE]);
+      } else {
+        selectedSources.delete(ALL_SOURCE_VALUE);
+
+        if (target.checked) {
+          selectedSources.add(target.value);
+        } else {
+          selectedSources.delete(target.value);
+        }
+
+        if (selectedSources.size === 0) {
+          // Never keep an empty filter.
+          selectedSources = new Set([ALL_SOURCE_VALUE]);
+        }
+      }
+
+      syncSourceFilterCheckboxes();
+      updateSourceFilterSummary();
+      applySourceFilter();
     }
 
     // ---------------------------------------------
@@ -653,14 +891,18 @@
           dutch: word.dutch,
           english: word.english,
           count: savedCounts.has(word.id) ? savedCounts.get(word.id) : 0,
-          exampleDutch: word.exampleDutch || ""
+          exampleDutch: word.exampleDutch || "",
+          sourceFile: word.sourceFile || "unknown",
+          sourceFiles: Array.isArray(word.sourceFiles) && word.sourceFiles.length > 0
+            ? [...word.sourceFiles]
+            : [word.sourceFile || "unknown"]
         };
       });
     }
 
     function saveProgress() {
-      // Save the full word list (including counts) so learning progress persists.
-      localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(words));
+      // Save the full base deck so counts persist even when a source filter is active.
+      localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(baseWords));
     }
 
     // ---------------------------------------------
@@ -747,16 +989,21 @@
         })
         .map(function (item) {
           const cleanDutch = item.dutch.trim();
+          const cleanEnglish = item.english.trim();
           const cleanExample =
             typeof item.exampleDutch === "string"
               ? item.exampleDutch.trim()
               : "";
+          const sourceInfo = normalizeSourceFields(item);
 
           return {
+            id: Number.isInteger(item.id) && item.id > 0 ? item.id : null,
             dutch: cleanDutch,
-            english: item.english.trim(),
+            english: cleanEnglish,
             // Ensure every Dutch word has an example sentence.
-            exampleDutch: cleanExample || buildDefaultExampleSentence(cleanDutch)
+            exampleDutch: cleanExample || buildDefaultExampleSentence(cleanDutch),
+            sourceFile: sourceInfo.sourceFile,
+            sourceFiles: sourceInfo.sourceFiles
           };
         })
         .filter(function (item) {
@@ -767,38 +1014,42 @@
     function createWordObjectsFromPairs(wordPairs) {
       return wordPairs.map(function (pair, index) {
         return {
-          id: index + 1,
+          id: Number.isInteger(pair.id) && pair.id > 0 ? pair.id : index + 1,
           dutch: pair.dutch,
           english: pair.english,
           count: 0,
           // Ensure every word object always has an example sentence.
-          exampleDutch: pair.exampleDutch || buildDefaultExampleSentence(pair.dutch)
+          exampleDutch: pair.exampleDutch || buildDefaultExampleSentence(pair.dutch),
+          sourceFile: pair.sourceFile || "unknown",
+          sourceFiles: Array.isArray(pair.sourceFiles) && pair.sourceFiles.length > 0
+            ? pair.sourceFiles
+            : [pair.sourceFile || "unknown"]
         };
       });
     }
 
     function initializeDeck(baseDeck) {
-      baseWords = cloneWords(baseDeck).map(function (word) {
+      defaultWords = cloneWords(baseDeck).map(function (word) {
         return {
           id: word.id,
           dutch: word.dutch,
           english: word.english,
           count: 0,
-          exampleDutch: word.exampleDutch || ""
+          exampleDutch: word.exampleDutch || "",
+          sourceFile: word.sourceFile || "unknown",
+          sourceFiles: Array.isArray(word.sourceFiles) && word.sourceFiles.length > 0
+            ? [...word.sourceFiles]
+            : [word.sourceFile || "unknown"]
         };
       });
 
-      words = applySavedCounts(baseWords);
+      baseWords = applySavedCounts(defaultWords);
+      selectedSources = new Set([ALL_SOURCE_VALUE]);
+      renderSourceFilterOptions();
       resetSessionTracking();
       resetQuizSessionStats();
       resetQuizQuestionState();
-
-      if (words.length === 0) {
-        renderCurrentView();
-        return;
-      }
-
-      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
+      applySourceFilter();
     }
 
     async function loadWordsFromDataFile() {
@@ -1197,17 +1448,8 @@
       if (!shouldReset) return;
 
       localStorage.removeItem(PROGRESS_STORAGE_KEY);
-      words = cloneWords(baseWords);
-      resetSessionTracking();
-      resetQuizSessionStats();
-      resetQuizQuestionState();
-
-      if (words.length === 0) {
-        renderCurrentView();
-        return;
-      }
-
-      showWordAtIndex(0, { trackHistory: true, trackRecent: true });
+      baseWords = cloneWords(defaultWords);
+      applySourceFilter();
     }
 
     // ---------------------------------------------
@@ -1229,6 +1471,7 @@
     resetProgressBtn.addEventListener("click", resetProgress);
     themeToggleBtn.addEventListener("click", toggleTheme);
     exampleBtn.addEventListener("click", showExampleSentence);
+    sourceFilterOptions.addEventListener("change", handleSourceFilterChange);
 
     // Optional keyboard support for flip.
     flashcard.addEventListener("keydown", function (event) {
