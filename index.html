@@ -557,15 +557,22 @@
     const THEME_STORAGE_KEY = "dutchFlashcardsTheme";
     const PROGRESS_STORAGE_KEY = "dutchFlashcardsProgressV1";
 
-    // Bucket selection probabilities (must sum to 100).
-    const BUCKET_WEIGHTS = {
-      1: 60,
-      2: 25,
-      3: 15
+    // Base weight by bucket for word-level scheduling.
+    // Higher bucket => lower frequency.
+    const BUCKET_BASE_WEIGHTS = {
+      1: 1.0,
+      2: 0.45,
+      3: 0.2
     };
 
-    // Cooldown length: avoid reusing the last N shown words when possible.
-    const COOLDOWN_LENGTH = 2;
+    // Size dampening constant:
+    // sizeDamp = bucketSize / (bucketSize + BUCKET_SIZE_DAMP_FACTOR)
+    // This reduces overexposure when a bucket has very few words.
+    const BUCKET_SIZE_DAMP_FACTOR = 4;
+
+    // Cooldown length (minimum 7 requested):
+    // avoid reusing the last N shown words when possible.
+    const COOLDOWN_LENGTH = 7;
 
     // Quiz session length: change this number to make quiz sessions shorter/longer.
     const QUIZ_SESSION_LENGTH = 10;
@@ -657,10 +664,6 @@
             : [word.sourceFile || "unknown"]
         };
       });
-    }
-
-    function randomFromArray(list) {
-      return list[Math.floor(Math.random() * list.length)];
     }
 
     // ADDED (Example sentences):
@@ -918,37 +921,8 @@
       return 3;
     }
 
-    function buildBucketsByWordIndex(wordList) {
-      const buckets = { 1: [], 2: [], 3: [] };
-
-      wordList.forEach(function (word, index) {
-        const bucket = getBucketFromCount(word.count);
-        buckets[bucket].push(index);
-      });
-
-      return buckets;
-    }
-
-    function pickWeightedBucketId(bucketMap) {
-      const availableBucketIds = [1, 2, 3].filter(function (bucketId) {
-        return bucketMap[bucketId].length > 0;
-      });
-
-      if (availableBucketIds.length === 0) return null;
-
-      let totalWeight = 0;
-      availableBucketIds.forEach(function (bucketId) {
-        totalWeight += BUCKET_WEIGHTS[bucketId];
-      });
-
-      let point = Math.random() * totalWeight;
-
-      for (const bucketId of availableBucketIds) {
-        point -= BUCKET_WEIGHTS[bucketId];
-        if (point <= 0) return bucketId;
-      }
-
-      return availableBucketIds[availableBucketIds.length - 1];
+    function getBaseWeightByBucket(bucketId) {
+      return BUCKET_BASE_WEIGHTS[bucketId] || BUCKET_BASE_WEIGHTS[1];
     }
 
     // ---------------------------------------------
@@ -1256,28 +1230,69 @@
     function pickNextWordIndexWeighted() {
       if (words.length === 0) return -1;
 
-      // Build buckets from current counts each time (derived, not stored permanently).
-      const allBuckets = buildBucketsByWordIndex(words);
+      // Word-level weighted sampling:
+      // score = baseWeight(bucket) * sizeDamp(bucketSize) * recencyWeight
+      // recencyWeight is 0 for recent words (cooldown), unless all become 0.
 
-      // Cooldown rule:
-      // Prefer words not in recentWordIds when alternatives exist.
-      const nonRecentBuckets = { 1: [], 2: [], 3: [] };
+      // 1) Count how many words are in each bucket right now.
+      const bucketSizes = { 1: 0, 2: 0, 3: 0 };
+      words.forEach(function (word) {
+        const bucketId = getBucketFromCount(word.count);
+        bucketSizes[bucketId] += 1;
+      });
 
-      [1, 2, 3].forEach(function (bucketId) {
-        nonRecentBuckets[bucketId] = allBuckets[bucketId].filter(function (index) {
-          return !recentWordIds.includes(words[index].id);
+      const recentSet = new Set(recentWordIds);
+
+      function buildWeights(respectCooldown) {
+        return words.map(function (word, index) {
+          const bucketId = getBucketFromCount(word.count);
+          const baseWeight = getBaseWeightByBucket(bucketId);
+          const bucketSize = bucketSizes[bucketId];
+          const sizeDamp = bucketSize / (bucketSize + BUCKET_SIZE_DAMP_FACTOR);
+
+          // Cooldown: avoid recent words when alternatives exist.
+          const isRecent = recentSet.has(word.id);
+          const recencyWeight = respectCooldown && isRecent ? 0 : 1;
+
+          return {
+            index: index,
+            weight: baseWeight * sizeDamp * recencyWeight
+          };
         });
-      });
+      }
 
-      const hasNonRecentOptions = [1, 2, 3].some(function (bucketId) {
-        return nonRecentBuckets[bucketId].length > 0;
-      });
+      let weightedWords = buildWeights(true);
+      let totalWeight = weightedWords.reduce(function (sum, item) {
+        return sum + item.weight;
+      }, 0);
 
-      const bucketSource = hasNonRecentOptions ? nonRecentBuckets : allBuckets;
-      const bucketId = pickWeightedBucketId(bucketSource);
-      if (bucketId === null) return 0;
+      // If cooldown blocked everything (small deck), allow recent words gracefully.
+      if (totalWeight <= 0) {
+        weightedWords = buildWeights(false);
+        totalWeight = weightedWords.reduce(function (sum, item) {
+          return sum + item.weight;
+        }, 0);
+      }
 
-      return randomFromArray(bucketSource[bucketId]);
+      if (totalWeight <= 0) return 0;
+
+      // 2) Sample one word using the computed per-word weights.
+      let point = Math.random() * totalWeight;
+
+      for (const item of weightedWords) {
+        if (item.weight <= 0) continue;
+        point -= item.weight;
+        if (point <= 0) return item.index;
+      }
+
+      // Fallback: return the last selectable word.
+      for (let i = weightedWords.length - 1; i >= 0; i -= 1) {
+        if (weightedWords[i].weight > 0) {
+          return weightedWords[i].index;
+        }
+      }
+
+      return 0;
     }
 
     function goToWeightedNextWord() {
